@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
 
-import useWindowSize from "./hooks/useScreenSize";
-import { colours, screenBreakpoints } from "./theme";
-import meImg from "./assets/me.jpg";
+import Tile from "../components/Tile";
+import useWindowSize from "../hooks/useScreenSize";
+import { colours, screenBreakpoints } from "../theme";
+import meImg from "../assets/me.jpg";
+import backgroundPattern from "../assets/background-pattern.png";
 
-// @Cleanup - move this into a different file
+// @Cleanup - move this into a different file?
 // ############################################################
 // LINK
 // ############################################################
@@ -32,7 +34,7 @@ const LinkContainer = styled.div`
   }
 `;
 
-function Link({ children, href }) {
+function Link({ children, ...rest }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const animation = useSpring({
@@ -44,6 +46,7 @@ function Link({ children, href }) {
       style={animation}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
+      {...rest}
     >
       {children}
     </StyledLink>
@@ -61,13 +64,6 @@ const Title = styled.div`
   @media (max-width: ${screenBreakpoints.small}px) {
     font-size: 3em;
   }
-`;
-
-// @Cleanup - Tile and Container is unreadable
-const Tile = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-color: ${({ colour }) => colour};
 `;
 
 const Container = styled.div`
@@ -139,11 +135,7 @@ const Image = styled.img`
   height: auto;
 `;
 
-// @Cleanup - change this
-const backgroundPattern =
-  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQoU2NkIAIs1lr8n5GQOpCi2GuxjHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQCVBiZ60LnT4AAAAABJRU5ErkJggg==";
-
-export default function Home() {
+export default function LandingTile({ infoSectionRef }) {
   const screenWidth = useWindowSize().width;
 
   const imgAnimation = useSpring({
@@ -159,42 +151,45 @@ export default function Home() {
     config: { duration: 1200 }
   });
 
+  // @Incomplete - change url as well so that we can direct to it from other pages
+  const scrollToInfoSection = () => {
+    window.scrollTo(0, infoSectionRef.current.offsetTop);
+  };
+
   return (
-    <>
-      <Tile
-        colour={colours.secondary}
-        style={{
-          // http://bit.ly/2QRg4FQ #a32aa3
-          background: `url(${backgroundPattern})repeat`
-        }}
-      >
-        <Container>
-          <ImgContainer style={imgAnimation}>
-            <Image src={meImg} alt="me" />
-          </ImgContainer>
-          <div style={{ width: "5%" }} />
-          <TextContainer style={textAnimation}>
-            <Title>Arjun Gupta</Title>
-            <div
-              style={{
-                fontSize: "1.6em",
-                marginBottom: "1.5em"
-              }}
-            >
-              React Developer
-            </div>
-            <Quote>
-              "Finding solutions to business problems is more interesting and
-              important than the art of code."
-            </Quote>
-            <LinkContainer>
-              <Link>Info</Link>
-              <Link>Labs</Link>
-              <Link>Gallery</Link>
-            </LinkContainer>
-          </TextContainer>
-        </Container>
-      </Tile>
-    </>
+    // @Cleanup - Tile and Container is unreadable
+    <Tile
+      colour={colours.secondary}
+      style={{
+        background: `url(${backgroundPattern})repeat`
+      }}
+    >
+      <Container>
+        <ImgContainer style={imgAnimation}>
+          <Image src={meImg} alt="me" />
+        </ImgContainer>
+        <div style={{ width: "5%" }} />
+        <TextContainer style={textAnimation}>
+          <Title>Arjun Gupta</Title>
+          <div
+            style={{
+              fontSize: "1.6em",
+              marginBottom: "1.5em"
+            }}
+          >
+            React Developer
+          </div>
+          <Quote>
+            "Finding solutions to business problems is more interesting and
+            important than the art of code."
+          </Quote>
+          <LinkContainer>
+            <Link onClick={scrollToInfoSection}>Info</Link>
+            <Link>Labs</Link>
+            <Link>Gallery</Link>
+          </LinkContainer>
+        </TextContainer>
+      </Container>
+    </Tile>
   );
 }
