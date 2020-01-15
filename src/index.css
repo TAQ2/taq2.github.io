@@ -7,11 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* @Incomplete - shouldn't need to put this here but the background image of the landing tile is messed up */
-body {
-  background-color: #730073;
-}
-
 * {
   box-sizing: border-box;
 }

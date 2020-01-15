@@ -2,6 +2,8 @@ import React from "react";
 import { Route } from "react-router-dom";
 
 import Home from "./Home";
+import Labs from "./Labs";
+import Gallery from "./Gallery";
 
 export default function App() {
   return (
@@ -10,9 +12,11 @@ export default function App() {
         <Home />
       </Route>
       <Route path="/labs">
-        Labs how are we going to navigate back to other places
+        <Labs />
       </Route>
-      <Route path="/gallery">Gallery</Route>
+      <Route path="/gallery">
+        <Gallery />
+      </Route>
     </>
   );
 }

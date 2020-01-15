@@ -4,10 +4,9 @@ import styled from "styled-components";
 
 import Link from "./Link";
 import Tile from "../components/Tile";
-import useWindowSize from "../hooks/useScreenSize";
+import Title from "../components/Title";
 import { colours, screenBreakpoints } from "../theme";
 import meImg from "../assets/me.jpg";
-import backgroundPattern from "../assets/background-pattern.png";
 
 const LinkContainer = styled.div`
   width: 100%;
@@ -17,15 +16,6 @@ const LinkContainer = styled.div`
 
   @media (max-width: ${screenBreakpoints.small}px) {
     font-size: 1.5em;
-  }
-`;
-
-const Title = styled.div`
-  font-size: 4em;
-  font-weight: bold;
-
-  @media (max-width: ${screenBreakpoints.small}px) {
-    font-size: 3em;
   }
 `;
 
@@ -99,8 +89,6 @@ const Image = styled.img`
 `;
 
 export default function LandingTile({ infoSectionRef, history }) {
-  const screenWidth = useWindowSize().width;
-
   // @Incomplete - animations should not run if coming back from labs or gallery?
   const imgAnimation = useSpring({
     transform: "scale(1)",
@@ -125,7 +113,9 @@ export default function LandingTile({ infoSectionRef, history }) {
     <Tile
       colour={colours.secondary}
       style={{
-        background: `url(${backgroundPattern})repeat`
+        backgroundColor: colours.secondary,
+        backgroundImage:
+          "repeating-linear-gradient(135deg, transparent, transparent 5px, rgba(255,255,255,.02) 5px, rgba(255,255,255,.02) 9px)"
       }}
     >
       <Container>
