@@ -1,27 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
 
+import Link from "./Link";
 import Tile from "../components/Tile";
 import useWindowSize from "../hooks/useScreenSize";
 import { colours, screenBreakpoints } from "../theme";
 import meImg from "../assets/me.jpg";
 import backgroundPattern from "../assets/background-pattern.png";
-
-// @Cleanup - move this into a different file?
-// ############################################################
-// LINK
-// ############################################################
-const StyledLink = styled(animated.div)`
-  cursor: pointer;
-  background-color: ${colours.primary};
-  color: ${colours.secondary};
-  border: 2px solid ${colours.secondaryDark};
-  text-align: center;
-  width: 30%;
-  border-radius: 10px;
-  padding: 5px;
-`;
 
 const LinkContainer = styled.div`
   width: 100%;
@@ -33,29 +19,6 @@ const LinkContainer = styled.div`
     font-size: 1.5em;
   }
 `;
-
-function Link({ children, ...rest }) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const animation = useSpring({
-    transform: `scale(${isHovered ? 1.05 : 1})`
-  });
-
-  return (
-    <StyledLink
-      style={animation}
-      onMouseOver={() => setIsHovered(true)}
-      onMouseOut={() => setIsHovered(false)}
-      {...rest}
-    >
-      {children}
-    </StyledLink>
-  );
-}
-
-// ############################################################
-// ############################################################
-// ############################################################
 
 const Title = styled.div`
   font-size: 4em;
@@ -135,9 +98,10 @@ const Image = styled.img`
   height: auto;
 `;
 
-export default function LandingTile({ infoSectionRef }) {
+export default function LandingTile({ infoSectionRef, history }) {
   const screenWidth = useWindowSize().width;
 
+  // @Incomplete - animations should not run if coming back from labs or gallery?
   const imgAnimation = useSpring({
     transform: "scale(1)",
     from: { transform: "scale(0.3)" },
@@ -184,9 +148,15 @@ export default function LandingTile({ infoSectionRef }) {
             important than the art of code."
           </Quote>
           <LinkContainer>
-            <Link onClick={scrollToInfoSection}>Info</Link>
-            <Link>Labs</Link>
-            <Link>Gallery</Link>
+            <Link style={{ width: "30%" }} onClick={scrollToInfoSection}>
+              Info
+            </Link>
+            <Link style={{ width: "30%" }} href="/labs">
+              Labs
+            </Link>
+            <Link style={{ width: "30%" }} href="/gallery">
+              Gallery
+            </Link>
           </LinkContainer>
         </TextContainer>
       </Container>
