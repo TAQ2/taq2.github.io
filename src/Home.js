@@ -5,7 +5,6 @@ import styled from "styled-components";
 import useWindowSize from "./hooks/useScreenSize";
 import { colours, screenBreakpoints } from "./theme";
 import meImg from "./assets/me.jpg";
-import "./App.css";
 
 // @Cleanup - move this into a different file
 // ############################################################
@@ -55,35 +54,50 @@ function Link({ children, href }) {
 // ############################################################
 // ############################################################
 
+const Title = styled.div`
+  font-size: 4em;
+  font-weight: bold;
+
+  @media (max-width: ${screenBreakpoints.small}px) {
+    font-size: 3em;
+  }
+`;
+
+// @Cleanup - Tile and Container is unreadable
+const Tile = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: ${({ colour }) => colour};
+`;
+
 const Container = styled.div`
   display: flex;
-  height: 100vh;
+  height: 100%;
   padding: 0 2.5%;
+  margin: 0 auto;
+  max-width: 1250px;
 
   @media (max-width: ${screenBreakpoints.desktop}px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
-  // http://bit.ly/2QRg4FQ #a32aa3
-  background: url(
-    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQoU2NkIAIs1lr8n5GQOpCi2GuxjHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQCVBiZ60LnT4AAAAABJRU5ErkJggg==
-       )
-    repeat;
 `;
 
-const ImgContainer = styled.div`
-  width: 45%;
+const ImgContainer = styled(animated.div)`
+  width: 47.5%;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   @media (max-width: ${screenBreakpoints.desktop}px) {
     width: 70%;
+    height: 50%;
   }
 
   @media (max-width: ${screenBreakpoints.tablet}px) {
     width: 90%;
+    height: 50%;
   }
 
   @media (max-width: ${screenBreakpoints.small}px) {
@@ -92,7 +106,7 @@ const ImgContainer = styled.div`
 `;
 
 const TextContainer = styled(animated.div)`
-  width: 45%;
+  width: 47.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,21 +122,28 @@ const TextContainer = styled(animated.div)`
   }
 `;
 
-const Title = styled.div`
-  font-size: 4em;
-  font-weight: bold;
+const Quote = styled.i`
+  margin-bottom: 4em;
+  text-align: center;
 
   @media (max-width: ${screenBreakpoints.small}px) {
-    font-size: 3em;
+    margin-bottom: 2em;
   }
 `;
 
-const Tile = styled.div`
-  width: 100%;
-  height: 100vh;
+const Image = styled.img`
+  border-radius: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 `;
 
-function Home() {
+// @Cleanup - change this
+const backgroundPattern =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQoU2NkIAIs1lr8n5GQOpCi2GuxjHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQCVBiZ60LnT4AAAAABJRU5ErkJggg==";
+
+export default function Home() {
   const screenWidth = useWindowSize().width;
 
   const imgAnimation = useSpring({
@@ -140,29 +161,18 @@ function Home() {
 
   return (
     <>
-      {/* @Cleanup - having this div doesn't make sense in terms of the Container
-      styled component */}
-      <div
+      <Tile
+        colour={colours.secondary}
         style={{
-          maxWidth: "1250px",
-          margin: "0 auto"
+          // http://bit.ly/2QRg4FQ #a32aa3
+          background: `url(${backgroundPattern})repeat`
         }}
       >
         <Container>
-          <ImgContainer>
-            <animated.div style={imgAnimation}>
-              <img
-                src={meImg}
-                alt="me"
-                style={{
-                  borderRadius: "50%",
-                  paddingTop: "0%",
-                  width: "100%"
-                }}
-              />
-            </animated.div>
+          <ImgContainer style={imgAnimation}>
+            <Image src={meImg} alt="me" />
           </ImgContainer>
-          <div style={{ width: "2.5%" }} />
+          <div style={{ width: "5%" }} />
           <TextContainer style={textAnimation}>
             <Title>Arjun Gupta</Title>
             <div
@@ -173,15 +183,10 @@ function Home() {
             >
               React Developer
             </div>
-            <i
-              style={{
-                marginBottom: "4em",
-                textAlign: "center"
-              }}
-            >
+            <Quote>
               "Finding solutions to business problems is more interesting and
               important than the art of code."
-            </i>
+            </Quote>
             <LinkContainer>
               <Link>Info</Link>
               <Link>Labs</Link>
@@ -189,9 +194,7 @@ function Home() {
             </LinkContainer>
           </TextContainer>
         </Container>
-      </div>
+      </Tile>
     </>
   );
 }
-
-export default Home;
