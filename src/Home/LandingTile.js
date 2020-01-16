@@ -131,7 +131,7 @@ export default function LandingTile({ infoSectionRef, history }) {
               marginBottom: "1.5em"
             }}
           >
-            React Developer
+            React Developer 2
           </div>
           <Quote>
             "Finding solutions to business problems is more interesting and
