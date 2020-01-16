@@ -141,10 +141,10 @@ export default function LandingTile({ infoSectionRef, history }) {
             <Link style={{ width: "30%" }} onClick={scrollToInfoSection}>
               Info
             </Link>
-            <Link style={{ width: "30%" }} href="/labs">
+            <Link style={{ width: "30%" }} to="/labs">
               Labs
             </Link>
-            <Link style={{ width: "30%" }} href="/gallery">
+            <Link style={{ width: "30%" }} to="/gallery">
               Gallery
             </Link>
           </LinkContainer>

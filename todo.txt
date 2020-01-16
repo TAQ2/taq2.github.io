@@ -1,5 +1,8 @@
 started on the 14th
 
+so many divs and flexs
+show how many commits have been done today?
+should the footer be a header that also has navigation?
 available for work message
 email address icon somewhere
 

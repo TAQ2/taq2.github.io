@@ -18,14 +18,14 @@ const StyledLink = styled(animated.div)`
   padding: 5px;
 `;
 
-function Link({ children, onClick, history, href, style }) {
+function Link({ children, onClick, history, to, style }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const animation = useSpring({
     transform: `scale(${isHovered ? 1.05 : 1})`
   });
 
-  const updateHistory = () => history.push(href);
+  const updateHistory = () => history.push(to);
 
   return (
     <StyledLink
