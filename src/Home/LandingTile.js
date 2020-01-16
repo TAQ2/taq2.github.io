@@ -81,11 +81,12 @@ const Quote = styled.i`
 `;
 
 const Image = styled.img`
-  border-radius: 50%;
   max-height: 100%;
   max-width: 100%;
   width: auto;
   height: auto;
+  border-radius: 50%;
+  border: 10px solid ${colours.secondaryDark};
 `;
 
 export default function LandingTile({ infoSectionRef, history }) {

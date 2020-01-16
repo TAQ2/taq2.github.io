@@ -11,7 +11,7 @@ import { colours } from "../theme";
 const StyledLink = styled(animated.div)`
   background-color: ${colours.primary};
   color: ${colours.secondary};
-  border: 2px solid ${colours.secondaryDark};
+  border: 5px solid ${colours.secondaryDark};
   text-align: center;
   cursor: pointer;
   border-radius: 10px;

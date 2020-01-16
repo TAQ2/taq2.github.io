@@ -1,6 +1,6 @@
 started on the 14th
 
-dont animate/render until image has loaded
+dont animate/render until image has loaded - add a border to the image to indicate its presence
 create a container component with the max width and margin shit
 should the footer be a header that also has navigation?
 Look at the react art thing and see if we can strip it
@@ -10,7 +10,6 @@ Responsive gallery
     photo changes size
     how to show buttons for the code on small screens
 
-deploy
 
 CONTENT
 Add to readme the stack or something and link to that on the website?

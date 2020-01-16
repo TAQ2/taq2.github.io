@@ -86,7 +86,8 @@ function Piece({ img, name, githubLink, appLink }) {
           maxHeight: 300,
           maxWidth: 300,
           borderRadius: "50%",
-          filter: isHovered && "grayscale(50%)"
+          filter: isHovered && "grayscale(50%)",
+          border: `5px solid ${colours.secondaryDark}`
         }}
       />
       <div style={{ textAlign: "center", fontWeight: "bold" }}>{name}</div>

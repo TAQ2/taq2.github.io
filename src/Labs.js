@@ -28,7 +28,8 @@ function Lab({ name, img, description, githubLink, appLink }) {
             maxHeight: 300,
             maxWidth: 300,
             height: "auto",
-            width: "auto"
+            width: "auto",
+            border: `5px solid ${colours.secondaryDark}`
           }}
           href={appLink}
         />
