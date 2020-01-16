@@ -39,4 +39,5 @@ function Link({ children, onClick, history, to, style }) {
   );
 }
 
+// use with router so that we don't need to restyle the a tag that comes with the rr Link component
 export default withRouter(Link);

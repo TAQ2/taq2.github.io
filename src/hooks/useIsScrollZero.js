@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 // https://codesandbox.io/s/m4ky8vwq4p
 
 // @Cleanup - bad name
+// @Cleanup - should this just belong in footer
 export default function useIsScrollZero() {
   const [scrollY, setScrollY] = useState(window.scrollY === 0);
 

@@ -1,7 +1,9 @@
 export const screenBreakpoints = {
   small: 576,
   tablet: 750,
-  desktop: 900
+  desktop: 900,
+  // @Cleanup - might not need this when we make a container component
+  maxContentWidth: 1050
 };
 
 export const colours = {

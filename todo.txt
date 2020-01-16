@@ -1,10 +1,23 @@
 started on the 14th
 
-so many divs and flexs
+Responsive gallery
+    photo changes size
+    how to show buttons for the code on small screens
+Gallery page content
+Content for the first art piece
+Content for the forum app
+Look at the react art thing and see if we can strip it
+
+Info section content
+    - Experience
+    - Other stuff I do
+
+
+create a container component with the max width and margin shit
+Reduce flexes and divs
 show how many commits have been done today?
 should the footer be a header that also has navigation?
-available for work message
-email address icon somewhere
-
-
-i could have icons next to the links on the landing component?
+available for work message?
+Animate landing time background pattern
+Could have icons next to the links on the landing component?
+if i scroll down then click a link, the scroll value is persisted

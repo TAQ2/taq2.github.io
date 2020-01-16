@@ -18,6 +18,60 @@ const data = [
     name: "Other Things",
     githubLink: "https://github.com/taq2/forum-app",
     appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Other Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Other Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Other Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Other Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Other Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
+  },
+  {
+    img: meImg,
+    name: "Other Things",
+    githubLink: "https://github.com/taq2/forum-app",
+    appLink: "https://github.com/taq2/forum-app"
   }
 ];
 
