@@ -115,7 +115,7 @@ export default function LandingTile({ infoSectionRef, history }) {
       style={{
         backgroundColor: colours.secondary,
         backgroundImage:
-          "repeating-linear-gradient(135deg, transparent, transparent 5px, rgba(255,255,255,.02) 5px, rgba(255,255,255,.02) 9px)"
+          "repeating-linear-gradient(135deg, transparent, rgba(255,255,255,.02) 15px)"
       }}
     >
       <Container>

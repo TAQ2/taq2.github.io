@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 
 import Title from "./components/Title";
-import data from "./labData";
+import labData from "./labData";
 import { colours } from "./theme";
 import meImg from "./assets/me.jpg";
 
@@ -11,38 +11,74 @@ function Lab({ name, img, description, githubLink, appLink }) {
     <div
       style={{
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         marginBottom: "2em"
       }}
     >
-      <img
-        src={meImg}
-        alt={name}
+      <div
         style={{
-          maxHeight: 300,
-          maxWidth: 300
+          width: "30%",
+          minHeight: "400px"
         }}
-        href={appLink}
-      />
-      <div>
-        <div>{name}</div>
-        <div>{description}</div>
+      >
+        <img
+          src={meImg}
+          alt={name}
+          style={{
+            maxHeight: 300,
+            maxWidth: 300,
+            height: "auto",
+            width: "auto"
+          }}
+          href={appLink}
+        />
+      </div>
+      <div
+        style={{
+          width: "60%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between"
+        }}
+      >
         <div
           style={{
-            display: "flex"
+            fontSize: "2em",
+            fontWeight: "bold",
+            marginBottom: "1em"
           }}
         >
-          <a href={appLink}>View</a>
-          <a
-            href={githubLink}
+          {name}
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            height: "100%"
+          }}
+        >
+          <div>{description}</div>
+          <div
             style={{
-              color: "black"
+              display: "flex",
+              justifyContent: "space-between"
             }}
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            <FaGithub />
-          </a>
+            <a href={appLink} target="_blank" rel="noopener noreferrer">
+              View
+            </a>
+            <a
+              href={githubLink}
+              style={{
+                color: "black"
+              }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -51,24 +87,30 @@ function Lab({ name, img, description, githubLink, appLink }) {
 
 export default function Labs() {
   return (
-    <div
-      style={{
-        color: colours.secondary,
-        // backgroundColor: colours.primary,
-        padding: "1em"
-      }}
-    >
+    <div style={{ color: colours.secondary }}>
+      {/* <Link to="/" style={{ width: 95, position: "fixed", top: 40, left: 20 }}>
+        {"<< Back"}
+      </Link> */}
+
       <Title
         style={{
-          textAlign: "center",
-          marginBottom: "1em"
+          backgroundColor: colours.primary,
+          // borderRadius: 10,
+          marginBottom: "0.5em"
         }}
       >
         Labs
       </Title>
-      {data.map((dat, i) => (
-        <Lab {...dat} key={i} />
-      ))}
+
+      <div
+        style={{
+          margin: "0 10%"
+        }}
+      >
+        {labData.map((data, i) => (
+          <Lab {...data} key={i} />
+        ))}
+      </div>
     </div>
   );
 }
