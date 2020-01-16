@@ -1,5 +1,6 @@
 started on the 14th
 
+dont animate/render until image has loaded
 create a container component with the max width and margin shit
 should the footer be a header that also has navigation?
 Look at the react art thing and see if we can strip it
