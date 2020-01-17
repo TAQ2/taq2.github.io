@@ -1,11 +1,11 @@
 started on the 14th
 
-dont animate/render until image has loaded - add a border to the image to indicate its presence
+dont animate/render until image has loaded
 create a container component with the max width and margin shit
-should the footer be a header that also has navigation?
 Look at the react art thing and see if we can strip it
 If i scroll down then click a link, the scroll value is persisted
 A way to click to info section from other pages
+should the footer be a header that also has navigation?
 Responsive gallery
     photo changes size
     how to show buttons for the code on small screens
@@ -18,7 +18,7 @@ Info section content
     - Other stuff I do
 
 AFTER CONTENT
-
+edit colours - colour theory?
 
 OUT OF SCOPE?
 animate the landing tile with a canvas

@@ -9,7 +9,7 @@ export const screenBreakpoints = {
 export const colours = {
   primary: "pink",
   secondary: "#730073",
-  // @Incomplete - do we need this? Maybe rename it to border colour
+  // @Incomplete - do we need this? Maybe rename it to border colour also its actually lighter not darker
   secondaryDark: "#a32aa3",
   tertiary: ""
 };

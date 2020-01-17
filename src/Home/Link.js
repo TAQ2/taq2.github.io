@@ -25,14 +25,17 @@ function Link({ children, onClick, history, to, style }) {
     transform: `scale(${isHovered ? 1.05 : 1})`
   });
 
-  const updateHistory = () => history.push(to);
+  const transition = () => {
+    window.scrollTo(0, 0);
+    history.push(to);
+  };
 
   return (
     <StyledLink
       style={{ ...animation, ...style }}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
-      onClick={onClick || updateHistory}
+      onClick={onClick || transition}
     >
       {children}
     </StyledLink>

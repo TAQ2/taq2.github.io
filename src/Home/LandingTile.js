@@ -106,7 +106,11 @@ export default function LandingTile({ infoSectionRef, history }) {
 
   // @Incomplete - change url as well so that we can direct to it from other pages
   const scrollToInfoSection = () => {
-    window.scrollTo(0, infoSectionRef.current.offsetTop);
+    window.scrollTo({
+      top: infoSectionRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth"
+    });
   };
 
   return (
