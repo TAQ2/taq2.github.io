@@ -2,8 +2,6 @@ started on the 14th
 
 dont animate/render until image has loaded
 create a container component with the max width and margin shit
-Look at the react art thing and see if we can strip it
-If i scroll down then click a link, the scroll value is persisted
 A way to click to info section from other pages
 should the footer be a header that also has navigation?
 Responsive gallery
@@ -30,3 +28,10 @@ available for work message?
 Could have icons next to the links on the landing component?
 linkedn in link?
 how to link to the website code
+does it make sense to have a user page given that viewing the code on github requires to go to the dev branch
+how does routing to other projects work?
+why is tic tac toe taking so long to load?
+
+
+OTHER REPOS:
+Make sure the p5 template has the toaster component

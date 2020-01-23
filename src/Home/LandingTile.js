@@ -89,7 +89,7 @@ const Image = styled.img`
   border: 10px solid ${colours.secondaryDark};
 `;
 
-export default function LandingTile({ infoSectionRef, history }) {
+export default function LandingTile({ infoSectionRef }) {
   // @Incomplete - animations should not run if coming back from labs or gallery?
   const imgAnimation = useSpring({
     transform: "scale(1)",
