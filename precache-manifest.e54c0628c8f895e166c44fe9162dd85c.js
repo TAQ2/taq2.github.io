@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2b4d74190ebb600061517490fb753c9",
+    "revision": "8fd4df6f20e3cd345a6bfedf0b5ea978",
     "url": "/index.html"
   },
   {
-    "revision": "edd5a362d035bc0c6f45",
+    "revision": "28df0f717532401e8251",
     "url": "/static/css/main.4d27b67e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.69f06d7c.chunk.js.LICENSE"
   },
   {
-    "revision": "edd5a362d035bc0c6f45",
-    "url": "/static/js/main.b65ee261.chunk.js"
+    "revision": "28df0f717532401e8251",
+    "url": "/static/js/main.7b560345.chunk.js"
   },
   {
     "revision": "96bc8da7da71b5a8b08a",
@@ -25,7 +25,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "bb78f5be9658d6717434d4d2d4f18e0a",
-    "url": "/static/media/forum-app-screenshot.bb78f5be.png"
+    "url": "/static/media/fake-latin-news-screenshot.bb78f5be.png"
   },
   {
     "revision": "69863ceefe46de86f5f7f5866c11a86e",
