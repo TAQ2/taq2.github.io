@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "725dd651635f9b399d2371ad343da0f9",
+    "revision": "e2b4d74190ebb600061517490fb753c9",
     "url": "/index.html"
   },
   {
-    "revision": "28f9077e3f738a929946",
+    "revision": "edd5a362d035bc0c6f45",
     "url": "/static/css/main.4d27b67e.chunk.css"
   },
   {
-    "revision": "ad0605ef2f158b007d6b",
-    "url": "/static/js/2.b5ab13fc.chunk.js"
+    "revision": "f36d03b92c2547d88b63",
+    "url": "/static/js/2.69f06d7c.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/static/js/2.b5ab13fc.chunk.js.LICENSE"
+    "url": "/static/js/2.69f06d7c.chunk.js.LICENSE"
   },
   {
-    "revision": "28f9077e3f738a929946",
-    "url": "/static/js/main.e59988d6.chunk.js"
+    "revision": "edd5a362d035bc0c6f45",
+    "url": "/static/js/main.b65ee261.chunk.js"
   },
   {
     "revision": "96bc8da7da71b5a8b08a",
@@ -34,5 +34,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0799a5abefcd3b9a7c7583540abad27b",
     "url": "/static/media/me.0799a5ab.jpg"
+  },
+  {
+    "revision": "c7e8b44e874b4f3909ddd27a3be47a2f",
+    "url": "/static/media/who-has-the-spotlight-screenshot.c7e8b44e.png"
   }
 ]);
