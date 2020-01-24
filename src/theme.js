@@ -11,5 +11,5 @@ export const colours = {
   secondary: "#730073",
   // @Incomplete - do we need this? Maybe rename it to border colour also its actually lighter not darker
   secondaryDark: "#a32aa3",
-  tertiary: ""
+  tertiary: "#005aff"
 };

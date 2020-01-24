@@ -41,3 +41,9 @@ monopoly calculator as a lab?
 Maps:
     - deploy
     - support mobile?
+
+CV:
+description of holistic city has a `:`. PWG doesn't
+Senior
+Does it make sense to say I'm more business
+Missing Maps code
