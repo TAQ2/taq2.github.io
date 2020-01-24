@@ -1,117 +1,111 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import styled from "styled-components";
 
 import Title from "./components/Title";
 import labData from "./labData";
-import { colours } from "./theme";
-import meImg from "./assets/me.jpg";
+import { colours, screenBreakpoints } from "./theme";
+
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+
+  @media (max-width: ${screenBreakpoints.tablet}px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+`;
+
+const ImageContainer = styled.a`
+  width: 100%;
+  min-width: 300px;
+  margin-right: 2em;
+
+  @media (max-width: ${screenBreakpoints.tablet}px) {
+    // width: 300px;
+    margin-right: 0em;
+  }
+`;
 
 function Lab({ name, img, description, githubLink, appLink }) {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        marginBottom: "2em"
-      }}
-    >
-      <div
-        style={{
-          width: "30%",
-          minHeight: "400px"
-        }}
-      >
+    <Container>
+      <ImageContainer href={appLink} target="_blank" rel="noopener noreferrer">
         <img
-          src={meImg}
+          src={img}
           alt={name}
           style={{
-            maxHeight: 300,
-            maxWidth: 300,
-            height: "auto",
-            width: "auto",
-            border: `5px solid ${colours.secondaryDark}`
+            width: "100%",
+            border: "5px solid #eee"
           }}
           href={appLink}
         />
-      </div>
-      <div
-        style={{
-          width: "60%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between"
-        }}
-      >
+      </ImageContainer>
+      <div>
         <div
           style={{
-            fontSize: "2em",
-            fontWeight: "bold",
-            marginBottom: "1em"
-          }}
-        >
-          {name}
-        </div>
-        <div
-          style={{
+            marginBottom: "0.5em",
             display: "flex",
-            flexDirection: "column",
             justifyContent: "space-between",
-            height: "100%"
+            fontSize: "2em",
+            alignContent: "center"
           }}
         >
-          <div>{description}</div>
-          <div
+          <a
+            href={appLink}
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
-              display: "flex",
-              justifyContent: "space-between"
+              fontWeight: "bold",
+              color: colours.secondary,
+              textDecoration: "none"
             }}
           >
-            <a href={appLink} target="_blank" rel="noopener noreferrer">
-              View
-            </a>
-            <a
-              href={githubLink}
-              style={{
-                color: "black"
-              }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-          </div>
+            {name}
+          </a>
+          <a
+            href={githubLink}
+            style={{
+              color: "black"
+            }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
         </div>
+        <div>{description}</div>
       </div>
-    </div>
+    </Container>
   );
 }
+
+const LabsContainer = styled.div`
+  margin: 0 auto; // @Incomplete 4em might not be correct if we don't use a footer
+  max-width: ${screenBreakpoints.maxContentWidth}px;
+`;
 
 export default function Labs() {
   return (
     <div style={{ color: colours.secondary }}>
-      {/* <Link to="/" style={{ width: 95, position: "fixed", top: 40, left: 20 }}>
-        {"<< Back"}
-      </Link> */}
-
       <Title
         style={{
           backgroundColor: colours.primary,
-          // borderRadius: 10,
           marginBottom: "0.5em"
         }}
       >
         Labs
       </Title>
-
-      <div
-        style={{
-          margin: "0 10%"
-        }}
-      >
+      <LabsContainer>
         {labData.map((data, i) => (
           <Lab {...data} key={i} />
         ))}
-      </div>
+      </LabsContainer>
     </div>
   );
 }
