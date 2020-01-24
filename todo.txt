@@ -1,12 +1,7 @@
 started on the 14th
 
 create a container component with the max width and margin shit
-Responsive gallery - check phones for onmouseover animation
-white line in responsive mode
-Navigation
-A way to click to info section from other pages
-should the footer be a header that also has navigation?
-
+testing library
 
 CONTENT
 Add to readme the stack or something and link to that on the website?
@@ -18,11 +13,16 @@ AFTER CONTENT
 dont animate/render until image has loaded
 edit colours - colour theory?
 change the top bar colour chrome android
-
+Responsive gallery - check phones for onmouseover animation
+white line in responsive mode
+Navigation
+    - A way to click to info section from other pages
+    - should the footer be a header that also has navigation?
 
 OUT OF SCOPE?
 animate the landing tile with a canvas or rebass-like animation
 show how many commits have been done today?
+lazy loading or loading other routes/images after page load
 
 QUESTIONS
 Reduce flexes and divs
@@ -39,3 +39,4 @@ why is tic tac toe taking so long to load?
 Run everything through grammarly
 Should maps support mobile?
 Should it be called forum app or fake latin news?
+Sort out the weirdness with who has the spotlight and dims of the screen
