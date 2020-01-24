@@ -1,12 +1,19 @@
 started on the 14th
 
+rebass like animation on the homepage?
 dont animate/render until image has loaded
 create a container component with the max width and margin shit
+
+
+Responsive gallery
+    how to show buttons for the code on small screens
+    how to interact with gestures
+    should we show just link to view it?
+
+
+Navigation
 A way to click to info section from other pages
 should the footer be a header that also has navigation?
-Responsive gallery
-    photo changes size
-    how to show buttons for the code on small screens
 
 
 CONTENT
@@ -17,6 +24,7 @@ Info section content
 
 AFTER CONTENT
 edit colours - colour theory?
+change the top bar colour chrome android
 
 OUT OF SCOPE?
 animate the landing tile with a canvas

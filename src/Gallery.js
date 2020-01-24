@@ -23,6 +23,16 @@ const PieceContainer = styled.div`
   }
 `;
 
+const Container = styled(animated.div)`
+  padding: 1em;
+  margin-bottom: 1em;
+
+  @media (max-width: ${screenBreakpoints.tablet}px) {
+    transform: translateY(0px) !important; // removes the animation
+  }
+`;
+
+// @Incomplete githubLink, appLink
 function Piece({ img, name, githubLink, appLink }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -31,7 +41,7 @@ function Piece({ img, name, githubLink, appLink }) {
   });
 
   return (
-    <animated.div
+    <Container
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
       style={{
@@ -52,7 +62,7 @@ function Piece({ img, name, githubLink, appLink }) {
           zIndex: 1
         }}
       >
-        <div
+        <div // @Incomplete - should we be using the button component here?
           style={{
             width: "30%",
             textAlign: "center",
@@ -81,17 +91,15 @@ function Piece({ img, name, githubLink, appLink }) {
         alt={name}
         src={img}
         style={{
-          height: "100%",
-          width: "100%",
-          maxHeight: 300,
-          maxWidth: 300,
+          height: 300,
+          width: 300,
           borderRadius: "50%",
           filter: isHovered && "grayscale(50%)",
           border: `5px solid ${colours.secondaryDark}`
         }}
       />
       <div style={{ textAlign: "center", fontWeight: "bold" }}>{name}</div>
-    </animated.div>
+    </Container>
   );
 }
 
