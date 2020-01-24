@@ -1,5 +1,5 @@
-import forumAppImg from "./assets/forum-app-screenshot.png";
-import mappingToolImg from "./assets/mapping-tool-screenshot.png";
+import forumAppImg from "./assets/labs/forum-app-screenshot.png";
+import mappingToolImg from "./assets/labs/mapping-tool-screenshot.png";
 
 const data = [
   {

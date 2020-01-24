@@ -62,30 +62,36 @@ function Piece({ img, name, githubLink, appLink }) {
           zIndex: 1
         }}
       >
-        <div // @Incomplete - should we be using the button component here?
+        <a // @Incomplete - should we be using the button component here?
           style={{
             width: "30%",
             textAlign: "center",
             backgroundColor: colours.primary,
             borderRadius: 5,
             padding: 5,
-            cursor: "pointer"
+            textDecoration: "none"
           }}
+          target="_blank"
+          rel="noopener noreferrer"
+          href={appLink}
         >
           View
-        </div>
-        <div
+        </a>
+        <a
           style={{
             width: "30%",
             textAlign: "center",
             backgroundColor: colours.primary,
             borderRadius: 5,
             padding: 5,
-            cursor: "pointer"
+            textDecoration: "none"
           }}
+          target="_blank"
+          rel="noopener noreferrer"
+          href={githubLink}
         >
           Code
-        </div>
+        </a>
       </div>
       <img
         alt={name}
