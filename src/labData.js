@@ -23,9 +23,9 @@ const data = [
     img: fakeLatinNewsImg,
     name: "This Website!", // @Incomplete - take a pic when done
     description:
-      "Using responsive design and simple animation, I display the work I have done. Not only showing my CV and portfolio but taking it a step further to display the art that I have produced.",
+      "Using responsive design, simple animation and no templates, I display the work I have done. Not only showing my CV and portfolio but taking it a step further to display the art that I have produced.",
 
-    githubLink: "https://github.com/taq2/taq2.github.io",
+    githubLink: "https://github.com/TAQ2/taq2.github.io/tree/dev",
     appLink: "https://taq2.github.io/"
   }
 ];

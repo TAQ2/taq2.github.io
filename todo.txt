@@ -1,16 +1,13 @@
 started on the 14th
 
-create a container component with the max width and margin shit
-testing library
-
 CONTENT
-Add to readme the stack or something and link to that on the website?
 Info section content
     - Experience
     - Other stuff I do
 
 AFTER CONTENT
-dont animate/render until image has loaded
+create a container component with the max width and margin shit
+dont animate/render until image has loaded? (All pages) - decrease resolution? image hosting?
 edit colours - colour theory?
 change the top bar colour chrome android
 Responsive gallery - check phones for onmouseover animation
@@ -18,25 +15,29 @@ white line in responsive mode
 Navigation
     - A way to click to info section from other pages
     - should the footer be a header that also has navigation?
+Run everything through grammarly
+Review and reduce flexes and divs
+linkedn in link
+testing library
+security vunerabilities suggested by github
 
 OUT OF SCOPE?
 animate the landing tile with a canvas or rebass-like animation
-show how many commits have been done today?
 lazy loading or loading other routes/images after page load
 
 QUESTIONS
-Reduce flexes and divs
+show how many commits have been done today?
 available for work message?
 Could have icons next to the links on the landing component?
-linkedn in link?
-how to link to the website code
+how to link to the website code?
 does it make sense to have a user page given that viewing the code on github requires to go to the dev branch
-how does routing to other projects work?
+
 
 
 OTHER REPOS:
-why is tic tac toe taking so long to load?
-Run everything through grammarly
-Should maps support mobile?
-Should it be called forum app or fake latin news?
-Sort out the weirdness with who has the spotlight and dims of the screen
+Tic tac toe - takes so long to load?
+Who has the spotlight - timings changes with the dims of the screen
+monopoly calculator as a lab?
+Maps:
+    - deploy
+    - support mobile?
