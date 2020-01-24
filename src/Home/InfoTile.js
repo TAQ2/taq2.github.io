@@ -2,12 +2,15 @@ import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 import { colours } from "../theme";
-import Tile from "../components/Tile";
 import experienceData from "./experienceData";
+// @Cleanup - does it make sense to use the content container and not the Tile component?
+// When you navigate from the landing tile, because ContentContainer is not 100vh it looks weird
+// should we just ignore the scroll and go to a new page
+import ContentContainer from "../components/ContentContainer";
 
 export default function InfoTile({ infoSectionRef }) {
   return (
-    <Tile ref={infoSectionRef}>
+    <ContentContainer ref={infoSectionRef}>
       {experienceData.map(experience => (
         <div>
           <div
@@ -46,6 +49,6 @@ export default function InfoTile({ infoSectionRef }) {
           </ul>
         </div>
       ))}
-    </Tile>
+    </ContentContainer>
   );
 }

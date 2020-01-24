@@ -133,7 +133,8 @@ export default function LandingTile({ infoSectionRef }) {
           <div
             style={{
               fontSize: "1.6em",
-              marginBottom: "1.5em"
+              marginBottom: "1.5em",
+              textAlign: "center"
             }}
           >
             Full Stack Web Dev Specialising In React

@@ -5,22 +5,15 @@ import { useSpring, animated } from "react-spring";
 import Title from "./components/Title";
 import { colours, screenBreakpoints } from "./theme";
 import galleryData from "./galleryData";
+import ContentContainer from "./components/ContentContainer";
 
 // @Cleanup - bad name
-const PieceContainer = styled.div`
+
+const PieceContainer = styled(ContentContainer)`
   display: flex;
   flex-wrap: wrap;
   max-width: ${screenBreakpoints.maxContentWidth}px;
-  margin: 0 5%;
   justify-content: center;
-
-  // @Incomplete - this is only so that the footer looks ok
-  // @Incomplete - this is overwridden in the media query
-  margin-bottom: 2em;
-
-  @media (min-width: ${screenBreakpoints.maxContentWidth}px) {
-    margin: 0 auto;
-  }
 `;
 
 const Container = styled(animated.div)`
@@ -32,7 +25,6 @@ const Container = styled(animated.div)`
   }
 `;
 
-// @Incomplete githubLink, appLink
 function Piece({ img, name, githubLink, appLink }) {
   const [isHovered, setIsHovered] = useState(false);
 

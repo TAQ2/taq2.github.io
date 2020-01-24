@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import styled from "styled-components";
 
+import ContentContainer from "./components/ContentContainer";
 import Title from "./components/Title";
 import labData from "./labData";
 import { colours, screenBreakpoints } from "./theme";
@@ -27,7 +28,6 @@ const ImageContainer = styled.a`
   margin-right: 2em;
 
   @media (max-width: ${screenBreakpoints.tablet}px) {
-    // width: 300px;
     margin-right: 0em;
   }
 `;
@@ -85,11 +85,6 @@ function Lab({ name, img, description, githubLink, appLink }) {
   );
 }
 
-const LabsContainer = styled.div`
-  margin: 0 auto; // @Incomplete 4em might not be correct if we don't use a footer
-  max-width: ${screenBreakpoints.maxContentWidth}px;
-`;
-
 export default function Labs() {
   return (
     <div style={{ color: colours.secondary }}>
@@ -101,11 +96,11 @@ export default function Labs() {
       >
         Labs
       </Title>
-      <LabsContainer>
+      <ContentContainer>
         {labData.map((data, i) => (
           <Lab {...data} key={i} />
         ))}
-      </LabsContainer>
+      </ContentContainer>
     </div>
   );
 }

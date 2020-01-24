@@ -1,12 +1,14 @@
 started on the 14th
 
+dig up pearson stuff
+
 CONTENT
 Info section content
     - Experience
     - Other stuff I do
 
 AFTER CONTENT
-create a container component with the max width and margin shit
+
 dont animate/render until image has loaded? (All pages) - decrease resolution? image hosting?
 edit colours - colour theory?
 change the top bar colour chrome android
@@ -15,6 +17,7 @@ white line in responsive mode
 Navigation
     - A way to click to info section from other pages
     - should the footer be a header that also has navigation?
+    - if we use a footer, ContentContainer should have margin bottom
 Run everything through grammarly
 Review and reduce flexes and divs
 linkedn in link

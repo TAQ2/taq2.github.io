@@ -28,10 +28,18 @@ export default [
     ]
   },
   {
+    jobTitle: "Software Tester",
+    company: "Pearson Education",
+    from: "???",
+    to: "???",
+    description: "??? @Incomplete",
+    bullets: ["Psychology", "Cognitive Science", "Brain Biology"]
+  },
+  {
     jobTitle: "Neuroscience (1st Class)",
     company: "University of Sussex",
-    from: "2012",
-    to: "2015",
+    from: "09/2012",
+    to: "06/2015",
     description: "??? @Incomplete",
     bullets: ["Psychology", "Cognitive Science", "Brain Biology"]
   }
