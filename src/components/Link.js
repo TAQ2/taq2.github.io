@@ -5,13 +5,10 @@ import { withRouter } from "react-router-dom";
 
 import { colours } from "../theme";
 
-// @Cleanup - is link the correct name?
-// @Cleanup - move to components
-
 const StyledLink = styled(animated.div)`
   background-color: ${colours.primary};
   color: ${colours.secondary};
-  border: 5px solid ${colours.secondaryDark};
+  border: 5px solid ${colours.secondaryLight};
   text-align: center;
   cursor: pointer;
   border-radius: 10px;

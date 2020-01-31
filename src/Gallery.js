@@ -7,15 +7,6 @@ import { colours, screenBreakpoints } from "./theme";
 import galleryData from "./galleryData";
 import ContentContainer from "./components/ContentContainer";
 
-// @Cleanup - bad name
-
-const PieceContainer = styled(ContentContainer)`
-  display: flex;
-  flex-wrap: wrap;
-  max-width: ${screenBreakpoints.maxContentWidth}px;
-  justify-content: center;
-`;
-
 const Container = styled(animated.div)`
   padding: 1em;
   margin-bottom: 1em;
@@ -45,8 +36,7 @@ function Piece({ img, name, githubLink, appLink }) {
       <div
         style={{
           position: "relative",
-          // @Incomplete - should be 50 but we are relative to the whole container
-          top: "47%",
+          top: "50%",
           display: "flex",
           justifyContent: "space-between",
           padding: "0 10%",
@@ -54,7 +44,7 @@ function Piece({ img, name, githubLink, appLink }) {
           zIndex: 1
         }}
       >
-        <a // @Incomplete - should we be using the button component here?
+        <a
           style={{
             width: "30%",
             textAlign: "center",
@@ -93,7 +83,7 @@ function Piece({ img, name, githubLink, appLink }) {
           width: 300,
           borderRadius: "50%",
           filter: isHovered && "grayscale(50%)",
-          border: `5px solid ${colours.secondaryDark}`
+          border: `5px solid ${colours.secondaryLight}`
         }}
       />
       <div style={{ textAlign: "center", fontWeight: "bold" }}>{name}</div>
@@ -112,8 +102,13 @@ export default function Gallery() {
       >
         Gallery
       </Title>
-      <PieceContainer>
-        {/* @Cleanup - this div doesn't belong in the piece container */}
+      <ContentContainer
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center"
+        }}
+      >
         <div style={{ marginBottom: "1em" }}>
           Here is where I do programmatic art stuff using p5.js. Here is where I
           do programmatic art stuff using p5.jsHere is where I do programmatic
@@ -123,7 +118,7 @@ export default function Gallery() {
         {galleryData.map((data, i) => (
           <Piece {...data} key={i} />
         ))}
-      </PieceContainer>
+      </ContentContainer>
     </div>
   );
 }

@@ -15,7 +15,6 @@ Navigation
 Run everything through grammarly
 Review and reduce flexes and divs
 linkedn in link
-testing library
 security vunerabilities suggested by github
 
 OUT OF SCOPE?
@@ -29,11 +28,11 @@ Could have icons next to the links on the landing component?
 how to link to the website code?
 does it make sense to have a user page given that viewing the code on github requires to go to the dev branch
 
-
-
 OTHER REPOS:
 Tic tac toe - takes so long to load?
-Who has the spotlight - timings changes with the dims of the screen
+Who has the spotlight
+    - timings changes with the dims of the screen
+    - is the code good
 monopoly calculator as a lab?
 Maps:
     - deploy

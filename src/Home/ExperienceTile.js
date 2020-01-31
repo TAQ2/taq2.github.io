@@ -3,10 +3,6 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 
 import { colours } from "../theme";
 import experienceData from "./experienceData";
-
-// @Cleanup - does it make sense to use the content container and not the Tile component?
-// When you navigate from the landing tile, because ContentContainer is not 100vh it looks weird
-// should we just ignore the scroll and go to a new page
 import ContentContainer from "../components/ContentContainer";
 import Title from "../components/Title";
 import Tile from "../components/Tile";
@@ -15,7 +11,7 @@ export default function InfoTile({ infoSectionRef }) {
   return (
     <Tile colour={colours.primary}>
       <ContentContainer ref={infoSectionRef}>
-        <Title style={{ marginTop: "0.5em" }}>Experience</Title>
+        <Title style={{ margin: "0.5em 0" }}>Experience</Title>
         {experienceData.map((experience, i) => (
           <div key={i}>
             <div

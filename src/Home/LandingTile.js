@@ -2,7 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
 
-import Link from "./Link";
+import Link from "../components/Link";
 import Tile from "../components/Tile";
 import Title from "../components/Title";
 import { colours, screenBreakpoints } from "../theme";
@@ -86,11 +86,10 @@ const Image = styled.img`
   width: auto;
   height: auto;
   border-radius: 50%;
-  border: 10px solid ${colours.secondaryDark};
+  border: 10px solid ${colours.secondaryLight};
 `;
 
 export default function LandingTile({ infoSectionRef }) {
-  // @Incomplete - animations should not run if coming back from labs or gallery?
   const imgAnimation = useSpring({
     transform: "scale(1)",
     from: { transform: "scale(0.3)" },
@@ -104,7 +103,6 @@ export default function LandingTile({ infoSectionRef }) {
     config: { duration: 1200 }
   });
 
-  // @Incomplete - change url as well so that we can direct to it from other pages
   const scrollToInfoSection = () => {
     window.scrollTo({
       top: infoSectionRef.current.offsetTop,
@@ -114,7 +112,6 @@ export default function LandingTile({ infoSectionRef }) {
   };
 
   return (
-    // @Cleanup - Tile and Container is unreadable
     <Tile
       colour={colours.secondary}
       style={{

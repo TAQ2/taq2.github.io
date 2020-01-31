@@ -6,8 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
-  // @Incomplete - do we need to put a basename?
-  <HashRouter basename="/">
+  <HashRouter>
     <App />
   </HashRouter>,
   document.getElementById("root")

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import LandingTile from "./LandingTile";
 import SummaryTile from "./SummaryTile";
-import InfoTile from "./InfoTile";
+import ExperienceTile from "./ExperienceTile";
 import SkillsTile from "./SkillsTile";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <LandingTile infoSectionRef={infoSectionRef} />
       <SummaryTile />
       <SkillsTile />
-      <InfoTile infoSectionRef={infoSectionRef} />
+      <ExperienceTile infoSectionRef={infoSectionRef} />
     </>
   );
 }
