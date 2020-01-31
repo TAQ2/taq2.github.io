@@ -9,63 +9,66 @@ import experienceData from "./experienceData";
 // should we just ignore the scroll and go to a new page
 import ContentContainer from "../components/ContentContainer";
 import Title from "../components/Title";
+import Tile from "../components/Tile";
 
 export default function InfoTile({ infoSectionRef }) {
   return (
-    <ContentContainer ref={infoSectionRef}>
-      <Title style={{ marginTop: "0.5em" }}>Experience</Title>
-      {experienceData.map((experience, i) => (
-        <div key={i}>
-          <div
-            style={{
-              fontSize: "2em",
-              fontWeight: "bold",
-              color: colours.secondary
-            }}
-          >
-            {experience.jobTitle}
-          </div>
-          <div
-            style={{
-              fontSize: "1.5em",
-              color: colours.tertiary,
-              marginBottom: "0.5em"
-            }}
-          >
-            {experience.company}
-          </div>
-          <div
-            style={{
-              marginBottom: "1em"
-            }}
-          >
-            <FaRegCalendarAlt style={{ marginRight: "1em" }} />
-            <span>{experience.from}</span> - <span>{experience.to}</span>
-          </div>
-          {experience.description && (
+    <Tile colour={colours.primary}>
+      <ContentContainer ref={infoSectionRef}>
+        <Title style={{ marginTop: "0.5em" }}>Experience</Title>
+        {experienceData.map((experience, i) => (
+          <div key={i}>
             <div
               style={{
-                fontWeight: "bold"
+                fontSize: "2em",
+                fontWeight: "bold",
+                color: colours.secondary
               }}
             >
-              {experience.description}
+              {experience.jobTitle}
             </div>
-          )}
-          <ul>
-            {experience.bullets.map((bullet, i) => (
-              <li
-                key={i}
+            <div
+              style={{
+                fontSize: "1.5em",
+                color: colours.tertiary,
+                marginBottom: "0.5em"
+              }}
+            >
+              {experience.company}
+            </div>
+            <div
+              style={{
+                marginBottom: "1em"
+              }}
+            >
+              <FaRegCalendarAlt style={{ marginRight: "1em" }} />
+              <span>{experience.from}</span> - <span>{experience.to}</span>
+            </div>
+            {experience.description && (
+              <div
                 style={{
-                  lineHeight: "1.5em",
-                  listStyleType: "square"
+                  fontWeight: "bold"
                 }}
               >
-                {bullet}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </ContentContainer>
+                {experience.description}
+              </div>
+            )}
+            <ul>
+              {experience.bullets.map((bullet, i) => (
+                <li
+                  key={i}
+                  style={{
+                    lineHeight: "1.5em",
+                    listStyleType: "square"
+                  }}
+                >
+                  {bullet}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </ContentContainer>
+    </Tile>
   );
 }

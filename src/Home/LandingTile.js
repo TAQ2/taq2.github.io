@@ -118,6 +118,8 @@ export default function LandingTile({ infoSectionRef }) {
     <Tile
       colour={colours.secondary}
       style={{
+        display: "flex",
+        alignItems: "center",
         backgroundColor: colours.secondary,
         backgroundImage:
           "repeating-linear-gradient(135deg, transparent, rgba(255,255,255,.02) 15px)"
