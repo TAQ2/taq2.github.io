@@ -1,7 +1,9 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import styled from "styled-components";
+import { FaHome } from "react-icons/fa";
 
+import Link from "./components/Link";
 import ContentContainer from "./components/ContentContainer";
 import Title from "./components/Title";
 import labData from "./labData";
@@ -88,6 +90,12 @@ function Lab({ name, img, description, githubLink, appLink }) {
 export default function Labs() {
   return (
     <div style={{ color: colours.secondary }}>
+      <Link
+        to="/"
+        style={{ position: "absolute", top: 5, left: 5, border: "unset" }}
+      >
+        <FaHome size={30} />
+      </Link>
       <Title
         style={{
           backgroundColor: colours.primary,

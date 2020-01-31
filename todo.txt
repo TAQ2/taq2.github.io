@@ -8,10 +8,6 @@ edit colours - colour theory?
 change the top bar colour chrome android
 Responsive gallery - check phones for onmouseover animation
 white line in responsive mode
-Navigation
-    - A way to click to info section from other pages
-    - should the footer be a header that also has navigation?
-    - if we use a footer, ContentContainer should have margin bottom
 Run everything through grammarly
 Review and reduce flexes and divs
 linkedn in link

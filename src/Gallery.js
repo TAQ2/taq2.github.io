@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
+import { FaHome } from "react-icons/fa";
 
+import Link from "./components/Link";
 import Title from "./components/Title";
 import { colours, screenBreakpoints } from "./theme";
 import galleryData from "./galleryData";
@@ -93,7 +95,13 @@ function Piece({ img, name, githubLink, appLink }) {
 
 export default function Gallery() {
   return (
-    <div style={{ color: colours.secondary }}>
+    <div style={{ color: colours.secondary, marginBottom: "1em" }}>
+      <Link
+        to="/"
+        style={{ position: "absolute", top: 5, left: 5, border: "unset" }}
+      >
+        <FaHome size={30} />
+      </Link>
       <Title
         style={{
           marginBottom: "0.5em",
