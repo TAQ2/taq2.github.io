@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ba3eaf8a0fddc0075bdfd9a3cb9a80e",
+    "revision": "2b5c2dab2da614046e541451266d05df",
     "url": "/index.html"
   },
   {
-    "revision": "574bd9cdd3301fc4ceb2",
+    "revision": "97c0edc057d9524503b8",
     "url": "/static/css/main.4d27b67e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.bbd67702.chunk.js.LICENSE"
   },
   {
-    "revision": "574bd9cdd3301fc4ceb2",
-    "url": "/static/js/main.cf74b5bf.chunk.js"
+    "revision": "97c0edc057d9524503b8",
+    "url": "/static/js/main.1d53ebe4.chunk.js"
   },
   {
     "revision": "96bc8da7da71b5a8b08a",
@@ -34,6 +34,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0799a5abefcd3b9a7c7583540abad27b",
     "url": "/static/media/me.0799a5ab.jpg"
+  },
+  {
+    "revision": "64e378f7991d6775a1fb10b626807f72",
+    "url": "/static/media/my-skills-mindmap-vertical.64e378f7.svg"
+  },
+  {
+    "revision": "f96dabdb4c0d64351d1b7e2399e841f6",
+    "url": "/static/media/my-skills-mindmap.f96dabdb.svg"
   },
   {
     "revision": "c7e8b44e874b4f3909ddd27a3be47a2f",
