@@ -129,7 +129,13 @@ export default function LandingTile({ infoSectionRef }) {
         </ImgContainer>
         <div style={{ width: "5%" }} />
         <TextContainer style={textAnimation}>
-          <Title>Arjun Gupta</Title>
+          <Title
+            style={{
+              color: colours.primary
+            }}
+          >
+            Arjun Gupta
+          </Title>
           <div
             style={{
               fontSize: "1.6em",

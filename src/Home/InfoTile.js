@@ -3,16 +3,19 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 
 import { colours } from "../theme";
 import experienceData from "./experienceData";
+
 // @Cleanup - does it make sense to use the content container and not the Tile component?
 // When you navigate from the landing tile, because ContentContainer is not 100vh it looks weird
 // should we just ignore the scroll and go to a new page
 import ContentContainer from "../components/ContentContainer";
+import Title from "../components/Title";
 
 export default function InfoTile({ infoSectionRef }) {
   return (
     <ContentContainer ref={infoSectionRef}>
-      {experienceData.map(experience => (
-        <div>
+      <Title style={{ marginTop: "0.5em" }}>Experience</Title>
+      {experienceData.map((experience, i) => (
+        <div key={i}>
           <div
             style={{
               fontSize: "2em",
@@ -25,26 +28,40 @@ export default function InfoTile({ infoSectionRef }) {
           <div
             style={{
               fontSize: "1.5em",
-              color: colours.tertiary
+              color: colours.tertiary,
+              marginBottom: "0.5em"
             }}
           >
             {experience.company}
           </div>
-          <div>
+          <div
+            style={{
+              marginBottom: "1em"
+            }}
+          >
             <FaRegCalendarAlt style={{ marginRight: "1em" }} />
             <span>{experience.from}</span> - <span>{experience.to}</span>
           </div>
-          <div
-            style={{
-              // color: colours.tertiary,
-              fontWeight: "bold"
-            }}
-          >
-            {experience.description}
-          </div>
+          {experience.description && (
+            <div
+              style={{
+                fontWeight: "bold"
+              }}
+            >
+              {experience.description}
+            </div>
+          )}
           <ul>
-            {experience.bullets.map(bullet => (
-              <li>{bullet}</li>
+            {experience.bullets.map((bullet, i) => (
+              <li
+                key={i}
+                style={{
+                  lineHeight: "1.5em",
+                  listStyleType: "square"
+                }}
+              >
+                {bullet}
+              </li>
             ))}
           </ul>
         </div>

@@ -30,17 +30,21 @@ export default [
   {
     jobTitle: "Software Tester",
     company: "Pearson Education",
-    from: "???",
-    to: "???",
-    description: "??? @Incomplete",
-    bullets: ["Psychology", "Cognitive Science", "Brain Biology"]
+    from: "10/2015",
+    to: "02/2016",
+    description:
+      "Translating children vocabulary games from the US to the UK market",
+    bullets: [
+      "Testing areas of the system by following prepared scripts and recording any issues",
+      "Retesting fixed issues following meticulous step by step instructions",
+      "Responding to customer emails and dealing with their requests in a concise and professional manner" // @Incomplete -  & Customer Support Officer
+    ]
   },
   {
     jobTitle: "Neuroscience (1st Class)",
     company: "University of Sussex",
     from: "09/2012",
-    to: "06/2015",
-    description: "??? @Incomplete",
+    to: "06/2015", // @Incomplete - do we put a description here?
     bullets: ["Psychology", "Cognitive Science", "Brain Biology"]
   }
 ];

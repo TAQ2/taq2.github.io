@@ -106,7 +106,6 @@ export default function Gallery() {
     <div style={{ color: colours.secondary }}>
       <Title
         style={{
-          textAlign: "center",
           marginBottom: "0.5em",
           backgroundColor: colours.primary
         }}

@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-import { screenBreakpoints } from "../theme";
+import { screenBreakpoints, colours } from "../theme";
 
 const Title = styled.div`
   font-size: 4em;
   font-weight: bold;
   text-align: center;
 
+  color: ${colours.secondary};
   @media (max-width: ${screenBreakpoints.small}px) {
     font-size: 3em;
   }
