@@ -111,10 +111,9 @@ export default function Gallery() {
         }}
       >
         <div style={{ marginBottom: "1em" }}>
-          Here is where I do programmatic art stuff using p5.js. Here is where I
-          do programmatic art stuff using p5.jsHere is where I do programmatic
-          art stuff using p5.jsHere is where I do programmatic art stuff using
-          p5.js
+          I find making programmatic art is a relaxing hobby. Just doing web
+          development makes me narrow-minded so I use basic physics and
+          animation concepts in p5.js which helps me flex my coding variability.
         </div>
         {galleryData.map((data, i) => (
           <Piece {...data} key={i} />

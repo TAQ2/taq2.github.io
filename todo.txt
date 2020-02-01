@@ -1,21 +1,20 @@
 started on the 14th
 
 Content
-    - extra curricular things
-    - add a description to labs page (show case)
+    - extra curricular things?
 
 AFTER CONTENT
-lab and gallery banner should have more margin bottom
+when click info button will user know to scroll down - could remove footer and make header then add a non-fixed footer
 dont animate/render until image has loaded? (All pages) - decrease resolution? image hosting?
 edit colours - colour theory?
 change the top bar colour chrome android
 Responsive gallery - check phones for onmouseover animation
 white line in responsive mode
-Run everything through grammarly
 Review and reduce flexes and divs
 linkedn in link
 security vunerabilities suggested by github
-when click info button will user know to scroll down
+run through grammarly
+Run everything through grammarly
 
 
 OUT OF SCOPE?
@@ -30,7 +29,7 @@ how to link to the website code?
 does it make sense to have a user page given that viewing the code on github requires to go to the dev branch
 
 OTHER REPOS:
-Tic tac toe - takes so long to load?
+Tic tac toe - takes so long to load?Ì
 Who has the spotlight
     - timings changes with the dims of the screen
     - is the code good

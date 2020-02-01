@@ -138,12 +138,12 @@ export default function LandingTile({ infoSectionRef }) {
               textAlign: "center"
             }}
           >
-            Full Stack Web Developer, <br /> Specialising In React
+            Full Stack Web Developer
           </div>
           <Quote>
-            "Finding solutions to business problems is more interesting and
-            important than the art of code. // @Incomplete - maybe put react
-            specialty in here"
+            I'm a London based developer, specialising in React. I love building
+            and designing websites but also have a strong interest in how that
+            influences business.
           </Quote>
           <LinkContainer>
             <Link style={{ width: "30%" }} onClick={scrollToInfoSection}>

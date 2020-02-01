@@ -6,8 +6,7 @@ const data = [
     img: mappingToolImg,
     name: "Mapping Tool", // @Incomplete - boring name
     description:
-      "Users can view different metrics wrangled from different sources using a sleek interface //@Incomplete - say more //@Incomplete - say more //@Incomplete - say more //@Incomplete - say more",
-
+      "I wanted to make an app that provokes the concepts of data visualisation. Using the Mapbox library, users can view different metrics wrangled from different sources and navigate using a sleek interface.",
     githubLink: "https://github.com/taq2/mapping-tool",
     appLink: "https://taq2.github.io/mapping-tool"
   },
@@ -15,7 +14,7 @@ const data = [
     img: fakeLatinNewsImg,
     name: "Fake Latin News",
     description:
-      "I created this simple app which uses an external API to generate a fake forum where users can flick through posts and their respective comments. Users can also add comments which are handled by redux.",
+      "I created this simple app which uses an external API to generate a fake forum where users can flick through posts and their respective comments. Users can also add comments.",
     githubLink: "https://github.com/taq2/fake-latin-news",
     appLink: "https://taq2.github.io/fake-latin-news"
   },

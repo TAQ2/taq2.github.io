@@ -9,7 +9,7 @@ Please change to dev branch if you want to view the code!
 
 # Concepts Explored
 
-- Marketing focused content creation
 - Responsive Design
 - UX driven animation
+- Marketing focused content creation
 - Deployment

@@ -27,6 +27,7 @@ const Container = styled.div`
 const ImageContainer = styled.a`
   width: 100%;
   min-width: 300px;
+  max-width: 350px;
   margin-right: 2em;
 
   @media (max-width: ${screenBreakpoints.tablet}px) {
@@ -99,10 +100,10 @@ export default function Labs() {
       <Title style={{ backgroundColor: colours.primary }}>Labs</Title>
       <ContentContainer>
         <div style={{ marginBottom: "2em" }}>
-          Here is where I do programmatic art stuff using p5.js. Here is where I
-          do programmatic art stuff using p5.jsHere is where I do programmatic
-          art stuff using p5.jsHere is where I do programmatic art stuff using
-          p5.js
+          This page showcases the apps that I have built, designed and deployed
+          on my own. I generally find building front-end applications with React
+          and deploying them on github pages to be the most interesting workflow
+          and also demonstrates my interest in design.
         </div>
         {labData.map((data, i) => (
           <Lab {...data} key={i} />

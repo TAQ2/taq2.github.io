@@ -24,7 +24,7 @@ export default [
   {
     title: "High Social Intelligence",
     description:
-      "Always being conscious of communication and the level of detail I need to use when explaining concepts to members of any department. This allow me to fit firmly between developers and stakeholders.",
+      "Always being conscious of communication and the level of detail I need to use when explaining concepts to members of any department. This allows me to fit firmly between developers and stakeholders.",
     icon: TiGroup
   },
   {
