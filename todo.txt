@@ -2,6 +2,7 @@ started on the 14th
 
 Content
     - extra curricular things?
+    - Run everything through grammarly
 
 AFTER CONTENT
 when click info button will user know to scroll down - could remove footer and make header then add a non-fixed footer
@@ -14,8 +15,8 @@ Review and reduce flexes and divs
 linkedn in link
 security vunerabilities suggested by github
 run through grammarly
-Run everything through grammarly
 
+fav icon
 
 OUT OF SCOPE?
 animate the landing tile with a canvas or rebass-like animation

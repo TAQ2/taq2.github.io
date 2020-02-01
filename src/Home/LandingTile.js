@@ -90,19 +90,21 @@ const Image = styled.img`
 `;
 
 export default function LandingTile({ infoSectionRef }) {
-  const [imgHasLoaded, setImgHasLoaded] = useState();
+  const [imgHasLoaded, setImgHasLoaded] = useState(false);
 
   const imgAnimation = useSpring({
     transform: "scale(1)",
     from: { transform: "scale(0.3)" },
-    config: { duration: 700 }
+    config: { duration: 700 },
+    immediate: imgHasLoaded
   });
 
   const textAnimation = useSpring({
     opacity: 1,
     from: { opacity: 0 },
     delay: 900,
-    config: { duration: 1200 }
+    config: { duration: 1200 },
+    immediate: imgHasLoaded
   });
 
   const scrollToInfoSection = () => {
@@ -126,12 +128,8 @@ export default function LandingTile({ infoSectionRef }) {
       }}
     >
       <Container>
-        <ImgContainer style={imgHasLoaded ? imgAnimation : {}}>
-          <Image
-            src={meImg}
-            alt="me"
-            onLoad={() => console.log(1) || setImgHasLoaded(true)}
-          />
+        <ImgContainer style={imgAnimation}>
+          <Image src={meImg} alt="me" onLoad={() => setImgHasLoaded(true)} />
         </ImgContainer>
         <div style={{ width: "5%" }} />
         <TextContainer style={textAnimation}>
