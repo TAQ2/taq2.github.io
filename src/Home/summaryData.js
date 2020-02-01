@@ -1,10 +1,10 @@
 import React from "react";
-import { GoGraph } from "react-icons/go";
 import {
   FaBook,
   FaPencilAlt,
   FaLightbulb,
-  FaGlobeAfrica
+  FaGlobeAfrica,
+  FaRegChartBar
 } from "react-icons/fa";
 import { TiGroup } from "react-icons/ti";
 
@@ -19,24 +19,24 @@ export default [
     title: "Business First Mentality",
     description:
       "The art of code is essential. But how computing can solve complex business problems to improve functionality, communication and profitability is much more interesting and important.",
-    icon: GoGraph
+    icon: FaRegChartBar
   },
   {
     title: "High Social Intelligence",
     description:
-      "Always being conscious of communication and the level of detail I need to use when explaining concepts to members of any department. Meaning I can fit firmly between developers and stakeholders.",
+      "Always being conscious of communication and the level of detail I need to use when explaining concepts to members of any department. This allow me to fit firmly between developers and stakeholders.",
     icon: TiGroup
   },
   {
     title: "100% Self Taught",
     description:
-      "After doing a degree in an unrelated field I changed career, taught myself to code and gained experience. Coming from a psychology background rather than computer science grants me a unique perspective.",
+      "After doing a degree in an unrelated field I changed career, taught myself to code and gained experience. Coming from a psychology background rather than computer science grants me an extra perspective.",
     icon: FaPencilAlt
   },
   {
     title: "Innovative",
     description:
-      "I prototyped an app in my own time which was so well received that I was allocated resources to complete it. I worked closely with the directors to facilitate new features incorporating my ideas.",
+      "I prototyped an app in my own time which was so well received that I was allocated resources to complete it. I worked closely with the directors to facilitate new features while incorporating my ideas.",
     icon: FaLightbulb
   },
   {

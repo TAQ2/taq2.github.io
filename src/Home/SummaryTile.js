@@ -61,7 +61,7 @@ export default function SummaryTile() {
                 >
                   {item.title}
                 </div>
-                <div>{item.description}</div>
+                <div style={{ textAlign: "justify" }}>{item.description}</div>
               </Item>
             );
           })}

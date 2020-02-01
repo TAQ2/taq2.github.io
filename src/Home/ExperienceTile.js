@@ -11,7 +11,7 @@ export default function InfoTile({ infoSectionRef }) {
   return (
     <Tile colour={colours.primary}>
       <ContentContainer ref={infoSectionRef}>
-        <Title style={{ margin: "0.5em 0" }}>Experience</Title>
+        <Title style={{ paddingTop: "0.5em" }}>Experience</Title>
         {experienceData.map((experience, i) => (
           <div key={i}>
             <div

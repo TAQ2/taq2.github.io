@@ -96,15 +96,14 @@ export default function Labs() {
       >
         <FaHome size={30} />
       </Link>
-      <Title
-        style={{
-          backgroundColor: colours.primary,
-          marginBottom: "0.5em"
-        }}
-      >
-        Labs
-      </Title>
+      <Title style={{ backgroundColor: colours.primary }}>Labs</Title>
       <ContentContainer>
+        <div style={{ marginBottom: "2em" }}>
+          Here is where I do programmatic art stuff using p5.js. Here is where I
+          do programmatic art stuff using p5.jsHere is where I do programmatic
+          art stuff using p5.jsHere is where I do programmatic art stuff using
+          p5.js
+        </div>
         {labData.map((data, i) => (
           <Lab {...data} key={i} />
         ))}

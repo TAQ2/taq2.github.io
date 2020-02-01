@@ -15,7 +15,7 @@ const data = [
     img: fakeLatinNewsImg,
     name: "Fake Latin News",
     description:
-      "This simple app uses an external API to generate a fake forum where users can flick through posts and their respective comments. Users can also add comments which are handled by redux.",
+      "I created this simple app which uses an external API to generate a fake forum where users can flick through posts and their respective comments. Users can also add comments which are handled by redux.",
     githubLink: "https://github.com/taq2/fake-latin-news",
     appLink: "https://taq2.github.io/fake-latin-news"
   },

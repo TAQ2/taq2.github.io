@@ -1,8 +1,11 @@
 started on the 14th
 
+Content
+    - extra curricular things
+    - add a description to labs page (show case)
 
 AFTER CONTENT
-
+lab and gallery banner should have more margin bottom
 dont animate/render until image has loaded? (All pages) - decrease resolution? image hosting?
 edit colours - colour theory?
 change the top bar colour chrome android
@@ -12,6 +15,8 @@ Run everything through grammarly
 Review and reduce flexes and divs
 linkedn in link
 security vunerabilities suggested by github
+when click info button will user know to scroll down
+
 
 OUT OF SCOPE?
 animate the landing tile with a canvas or rebass-like animation

@@ -128,11 +128,7 @@ export default function LandingTile({ infoSectionRef }) {
         </ImgContainer>
         <div style={{ width: "5%" }} />
         <TextContainer style={textAnimation}>
-          <Title
-            style={{
-              color: colours.primary
-            }}
-          >
+          <Title style={{ color: colours.primary, marginBottom: "0" }}>
             Arjun Gupta
           </Title>
           <div
@@ -142,15 +138,16 @@ export default function LandingTile({ infoSectionRef }) {
               textAlign: "center"
             }}
           >
-            Full Stack Web Dev Specialising In React
+            Full Stack Web Developer, <br /> Specialising In React
           </div>
           <Quote>
             "Finding solutions to business problems is more interesting and
-            important than the art of code."
+            important than the art of code. // @Incomplete - maybe put react
+            specialty in here"
           </Quote>
           <LinkContainer>
             <Link style={{ width: "30%" }} onClick={scrollToInfoSection}>
-              Info
+              CV
             </Link>
             <Link style={{ width: "30%" }} to="/labs">
               Labs

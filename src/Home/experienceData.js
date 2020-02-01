@@ -5,11 +5,13 @@ export default [
     from: "10/2018",
     to: "08/2019",
     description:
-      "Carried out various web projects relating to city design as a consultant",
+      "Delivered a wide range of web projects relating to city design",
     bullets: [
-      "In-depth use of Google Maps API for complex spatial calculations, rendering maps and built a React UI around it",
-      "Had direct contact with the company's clients to turn their business requirements into software",
-      "Made apps from start to finish without the need for assistance"
+      "Built React UIs around Google Maps using their API for complex spatial calculations to display different datasets",
+      "Large focus on responsive design and UX upgrades that increased user adoption by 23%",
+      "Worked on a wide range of codebases, learned PHP on the job and could adapt from coding in a team or independently whenever appropriate",
+      "Engaging directly with the company's clients to turn their business requirements into software",
+      "More // @Incomplete"
     ]
   },
   {
@@ -18,13 +20,13 @@ export default [
     from: "02/2016",
     to: "09/2018",
     description:
-      "Website selling bespoke windows and doors characterised by complex design and manufacturing rules",
+      "Developed features for the company's website to optimise sales of windows and doors which are characterised by complex design and manufacturing rules",
     bullets: [
-      "Transitioned from junior to mid-senior level within a two year period due to an intense focus on improving skills after working hours", // @Incomplete - is this a bad thing?
-      "Point of contact for other departments ranging from salespeople to product experts", // @Incomplete - this seems like a bad thing
-      "Managed, mentored and reviewed code for several devs",
-      "Experienced in surrounding roles e.g business/data analyst, product owner, testing, quality insurance and dev ops",
-      "Tasked to research and learn modern tools for future projects exploring MongoDB, GraphQL, Docker, Google Cloud, Digital Ocean, Heroku, Now etc"
+      "Reduced technical debt by rewriting a 20 year old spaghetti code base in React making sure it was readable and testable",
+      "Helped improve the customisation of the products on the website meaning other departments saved time processing orders // @Incomplete",
+      "Transitioned from a junior to a mentor and manager of five developers within a two year period, due to intense focus of taking work problems and finding solutions in my own time",
+      "Expanded into surrounding roles e.g business/data analyst, product owner, testing, quality assurance and devops, which reduced bottlenecks in the team and also increased my skill set",
+      "Integeral point of contact for other departments ranging from salespeople to product experts, ensuring all technical information is communicated clearly and effectively"
     ]
   },
   {
@@ -33,7 +35,7 @@ export default [
     from: "10/2015",
     to: "02/2016",
     description:
-      "Translating children vocabulary games from the US to the UK market",
+      "Tested children's vocabulary games that were redeveloped to transition from the US to the UK market",
     bullets: [
       "Testing areas of the system by following prepared scripts and recording any issues",
       "Retesting fixed issues following meticulous step by step instructions",
@@ -41,10 +43,15 @@ export default [
     ]
   },
   {
-    jobTitle: "Neuroscience (1st Class)",
+    jobTitle: "Neuroscience (1st Class BSc)",
     company: "University of Sussex",
     from: "09/2012",
-    to: "06/2015", // @Incomplete - do we put a description here?
-    bullets: ["Psychology", "Cognitive Science", "Brain Biology"]
+    to: "06/2015",
+    bullets: [
+      "Psychology and behaviour",
+      "Cognitive Science",
+      "Brain Biology",
+      "How does that relate? // @Incomplete"
+    ]
   }
 ];

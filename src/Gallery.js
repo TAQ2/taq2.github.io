@@ -102,14 +102,7 @@ export default function Gallery() {
       >
         <FaHome size={30} />
       </Link>
-      <Title
-        style={{
-          marginBottom: "0.5em",
-          backgroundColor: colours.primary
-        }}
-      >
-        Gallery
-      </Title>
+      <Title style={{ backgroundColor: colours.primary }}>Gallery</Title>
       <ContentContainer
         style={{
           display: "flex",
