@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
 
@@ -90,6 +90,8 @@ const Image = styled.img`
 `;
 
 export default function LandingTile({ infoSectionRef }) {
+  const [imgHasLoaded, setImgHasLoaded] = useState();
+
   const imgAnimation = useSpring({
     transform: "scale(1)",
     from: { transform: "scale(0.3)" },
@@ -115,6 +117,7 @@ export default function LandingTile({ infoSectionRef }) {
     <Tile
       colour={colours.secondary}
       style={{
+        opacity: imgHasLoaded ? 1 : 0,
         display: "flex",
         alignItems: "center",
         backgroundColor: colours.secondary,
@@ -123,8 +126,12 @@ export default function LandingTile({ infoSectionRef }) {
       }}
     >
       <Container>
-        <ImgContainer style={imgAnimation}>
-          <Image src={meImg} alt="me" />
+        <ImgContainer style={imgHasLoaded ? imgAnimation : {}}>
+          <Image
+            src={meImg}
+            alt="me"
+            onLoad={() => console.log(1) || setImgHasLoaded(true)}
+          />
         </ImgContainer>
         <div style={{ width: "5%" }} />
         <TextContainer style={textAnimation}>
