@@ -6,21 +6,13 @@ Content
 
 AFTER CONTENT
 edit colours - colour theory?
-Responsive gallery - check phones for onmouseover animation
-Review and reduce flexes and divs
-security vunerabilities suggested by github
-does it make sense to have a user page given that viewing the code on github requires to go to the dev branch
-fav icon
-
 
 OUT OF SCOPE?
 highlight the naviagtion button when tile is visable
 animate the landing tile with a canvas or rebass-like animation
-lazy loading or loading other routes/images after page load
-show how many commits have been done today?
 
 OTHER REPOS:
-Tic tac toe - takes so long to load?Ì
+Tic tac toe - takes so long to load?
 Who has the spotlight
     - timings changes with the dims of the screen
     - is the code good
@@ -28,9 +20,3 @@ monopoly calculator as a lab?
 Maps:
     - deploy
     - support mobile?
-
-CV:
-description of holistic city has a `:`. PWG doesn't
-Senior
-Does it make sense to say I'm more business
-Missing Maps code
