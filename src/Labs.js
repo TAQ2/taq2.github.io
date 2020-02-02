@@ -2,7 +2,6 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import styled from "styled-components";
 
-import Link from "./components/Link";
 import ContentContainer from "./components/ContentContainer";
 import Title from "./components/Title";
 import labData from "./labData";
@@ -11,7 +10,7 @@ import { colours, screenBreakpoints } from "./theme";
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   margin-right: 2em;
   margin-left: 2em;
 
@@ -24,9 +23,9 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.a`
-  width: 100%;
+  width: 350px;
   min-width: 300px;
-  max-width: 350px;
+  margin-bottom: 2em;
   margin-right: 2em;
 
   @media (max-width: ${screenBreakpoints.tablet}px) {

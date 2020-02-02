@@ -2,13 +2,11 @@ import styled from "styled-components";
 
 import { screenBreakpoints } from "../theme";
 
-// @Incomplete - should this handle margin top or should that be done by nav bar thing
-
 export default styled.div`
   margin: 0 auto;
   max-width: ${screenBreakpoints.maxContentWidth}px;
 
-  padding-bottom: 2em; // @Incomplete - only needed if there is a footer undereath this
+  padding-bottom: 1em;
 
   @media (max-width: ${screenBreakpoints.maxContentWidth}px) {
     margin: 0 5%;

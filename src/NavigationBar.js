@@ -57,6 +57,7 @@ export default function Name({
 }) {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
   const scrollToSection = (ref, isHack) => {
+    // @Incomplete - offsetting by 200 on mobile
     window.scrollTo({
       top: isHack ? ref.current.offsetTop - 200 : ref.current.offsetTop,
       left: 0,

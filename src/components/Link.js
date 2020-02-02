@@ -14,7 +14,7 @@ const StyledLink = styled(animated.div)`
   padding: 5px;
 `;
 
-function Link({ children, onClick, history, to, style }) {
+function Link({ children, onClick, to, style }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const animation = useSpring({
@@ -23,7 +23,6 @@ function Link({ children, onClick, history, to, style }) {
 
   const transition = () => {
     window.scrollTo(0, 0);
-    history.push(to);
   };
 
   return (

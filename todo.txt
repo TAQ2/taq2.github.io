@@ -5,29 +5,19 @@ Content
     - Run everything through grammarly
 
 AFTER CONTENT
-dont animate/render until image has loaded? (All pages) - decrease resolution? image hosting?
 edit colours - colour theory?
-change the top bar colour chrome android
 Responsive gallery - check phones for onmouseover animation
-white line in responsive mode
 Review and reduce flexes and divs
-linkedn in link
 security vunerabilities suggested by github
-run through grammarly
-
+does it make sense to have a user page given that viewing the code on github requires to go to the dev branch
 fav icon
+
 
 OUT OF SCOPE?
 highlight the naviagtion button when tile is visable
 animate the landing tile with a canvas or rebass-like animation
 lazy loading or loading other routes/images after page load
-
-QUESTIONS
 show how many commits have been done today?
-available for work message?
-Could have icons next to the links on the landing component?
-how to link to the website code?
-does it make sense to have a user page given that viewing the code on github requires to go to the dev branch
 
 OTHER REPOS:
 Tic tac toe - takes so long to load?Ì

@@ -22,7 +22,6 @@ export default [
       "Developed features for the company's website to optimise sales of windows and doors which are characterised by complex design and manufacturing rules",
     bullets: [
       "Reduced technical debt by rewriting a feature-rich 20 year-old spaghetti code base in React making sure it was readable and testable",
-      "Helped improve the customisation of the products on the website meaning other departments saved time processing orders // @Incomplete",
       "Transitioned from a junior to a mentor and manager of five developers within two years, due to intense focus of taking work problems and finding solutions in my own time",
       "Expanded into surrounding roles e.g business/data analyst, product owner, testing, quality assurance and devops, which reduced bottlenecks in the team and also increased my skillset",
       "Integral point of contact for other departments ranging from salespeople to product experts, ensuring all technical information is communicated clearly and effectively"
