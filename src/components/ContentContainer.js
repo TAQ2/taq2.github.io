@@ -8,7 +8,7 @@ export default styled.div`
   margin: 0 auto;
   max-width: ${screenBreakpoints.maxContentWidth}px;
 
-  margin-bottom: 2em; // @Incomplete - only needed if there is a footer undereath this
+  padding-bottom: 2em; // @Incomplete - only needed if there is a footer undereath this
 
   @media (max-width: ${screenBreakpoints.maxContentWidth}px) {
     margin: 0 5%;

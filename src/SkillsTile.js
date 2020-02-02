@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-import { ReactComponent as MindMap } from "../assets/my-skills-mindmap.svg";
-import { ReactComponent as MindMapVertical } from "../assets/my-skills-mindmap-vertical.svg";
-import Tile from "../components/Tile";
-import { colours, screenBreakpoints } from "../theme";
+import { ReactComponent as MindMap } from "./assets/my-skills-mindmap.svg";
+import { ReactComponent as MindMapVertical } from "./assets/my-skills-mindmap-vertical.svg";
+import Tile from "./components/Tile";
+import { colours, screenBreakpoints } from "./theme";
 
 const StyledMindMap = styled(MindMap)`
   display: flex;
@@ -30,7 +30,7 @@ const StyledMindMapVertical = styled(MindMapVertical)`
   align-items: center;
   fill: ${colours.primary};
   stroke: ${colours.secondary};
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
 
   width: 100%;
 
@@ -39,7 +39,7 @@ const StyledMindMapVertical = styled(MindMapVertical)`
   }
 `;
 
-export default function SummaryTile() {
+export default function SummaryTile({ skillsRef }) {
   return (
     <Tile
       colour="white"
@@ -47,6 +47,7 @@ export default function SummaryTile() {
         display: "flex",
         alignItems: "center"
       }}
+      ref={skillsRef}
     >
       <StyledMindMap />
       <StyledMindMapVertical />

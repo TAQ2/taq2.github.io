@@ -5,7 +5,6 @@ Content
     - Run everything through grammarly
 
 AFTER CONTENT
-when click info button will user know to scroll down - could remove footer and make header then add a non-fixed footer
 dont animate/render until image has loaded? (All pages) - decrease resolution? image hosting?
 edit colours - colour theory?
 change the top bar colour chrome android
@@ -19,6 +18,7 @@ run through grammarly
 fav icon
 
 OUT OF SCOPE?
+highlight the naviagtion button when tile is visable
 animate the landing tile with a canvas or rebass-like animation
 lazy loading or loading other routes/images after page load
 

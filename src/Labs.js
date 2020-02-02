@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import styled from "styled-components";
-import { FaHome } from "react-icons/fa";
 
 import Link from "./components/Link";
 import ContentContainer from "./components/ContentContainer";
@@ -88,22 +87,22 @@ function Lab({ name, img, description, githubLink, appLink }) {
   );
 }
 
-export default function Labs() {
+export default function Labs({ labsRef }) {
   return (
-    <div style={{ color: colours.secondary }}>
-      <Link
-        to="/"
-        style={{ position: "absolute", top: 5, left: 5, border: "unset" }}
+    <div style={{ color: colours.secondary }} ref={labsRef}>
+      <Title
+        style={{
+          backgroundColor: "white"
+        }}
       >
-        <FaHome size={30} />
-      </Link>
-      <Title style={{ backgroundColor: colours.primary }}>Labs</Title>
+        Labs
+      </Title>
       <ContentContainer>
-        <div style={{ marginBottom: "2em" }}>
-          This page showcases the apps that I have built, designed and deployed
-          on my own. I generally find building front-end applications with React
-          and deploying them on github pages to be the most interesting workflow
-          and also demonstrates my interest in design.
+        <div style={{ marginBottom: "2.5em" }}>
+          This showcases the apps that I have built, designed and deployed on my
+          own. I generally find building front-end applications with React and
+          deploying them on github pages to be the most interesting workflow and
+          also demonstrates my interest in design.
         </div>
         {labData.map((data, i) => (
           <Lab {...data} key={i} />

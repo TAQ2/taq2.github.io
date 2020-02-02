@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import ContentContainer from "../components/ContentContainer";
-import Tile from "../components/Tile";
-import { colours, screenBreakpoints } from "../theme";
+import ContentContainer from "./components/ContentContainer";
+import Tile from "./components/Tile";
+import { colours, screenBreakpoints } from "./theme";
 import data from "./summaryData";
 
 const Item = styled.div`
@@ -29,7 +29,7 @@ const StyledTile = styled(Tile)`
   }
 `;
 
-export default function SummaryTile() {
+export default function SummaryTile({ summaryRef }) {
   return (
     <StyledTile
       colour={colours.primary}
@@ -37,6 +37,7 @@ export default function SummaryTile() {
         display: "flex",
         alignItems: "center"
       }}
+      ref={summaryRef}
     >
       <ContentContainer>
         <div

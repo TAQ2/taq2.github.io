@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
+import { FaArrowRight } from "react-icons/fa";
 
-import Link from "../components/Link";
-import Tile from "../components/Tile";
-import Title from "../components/Title";
-import { colours, screenBreakpoints } from "../theme";
-import meImg from "../assets/me.jpg";
+import Link from "./components/Link";
+import Tile from "./components/Tile";
+import Title from "./components/Title";
+import { colours, screenBreakpoints } from "./theme";
+import meImg from "./assets/me.jpg";
 
 const LinkContainer = styled.div`
   width: 100%;
@@ -89,31 +90,21 @@ const Image = styled.img`
   border: 10px solid ${colours.secondaryLight};
 `;
 
-export default function LandingTile({ infoSectionRef }) {
+export default function LandingTile({ onClick }) {
   const [imgHasLoaded, setImgHasLoaded] = useState(false);
 
   const imgAnimation = useSpring({
     transform: "scale(1)",
     from: { transform: "scale(0.3)" },
-    config: { duration: 700 },
-    immediate: imgHasLoaded
+    config: { duration: 700 }
   });
 
   const textAnimation = useSpring({
     opacity: 1,
     from: { opacity: 0 },
     delay: 900,
-    config: { duration: 1200 },
-    immediate: imgHasLoaded
+    config: { duration: 1200 }
   });
-
-  const scrollToInfoSection = () => {
-    window.scrollTo({
-      top: infoSectionRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth"
-    });
-  };
 
   return (
     <Tile
@@ -151,14 +142,19 @@ export default function LandingTile({ infoSectionRef }) {
             influences business.
           </Quote>
           <LinkContainer>
-            <Link style={{ width: "30%" }} onClick={scrollToInfoSection}>
-              CV
-            </Link>
-            <Link style={{ width: "30%" }} to="/labs">
-              Labs
-            </Link>
-            <Link style={{ width: "30%" }} to="/gallery">
-              Gallery
+            <Link
+              onClick={onClick}
+              style={{
+                display: "flex",
+                alignItems: "center"
+              }}
+            >
+              More{" "}
+              <FaArrowRight
+                style={{
+                  marginLeft: "0.2em"
+                }}
+              />
             </Link>
           </LinkContainer>
         </TextContainer>

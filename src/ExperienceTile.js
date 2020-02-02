@@ -1,17 +1,21 @@
 import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
-import { colours } from "../theme";
+import { colours } from "./theme";
 import experienceData from "./experienceData";
-import ContentContainer from "../components/ContentContainer";
-import Title from "../components/Title";
-import Tile from "../components/Tile";
+import ContentContainer from "./components/ContentContainer";
+import Title from "./components/Title";
+import Tile from "./components/Tile";
 
-export default function InfoTile({ infoSectionRef }) {
+export default function ExperienceTile({ experienceRef }) {
   return (
-    <Tile colour={colours.primary}>
-      <ContentContainer ref={infoSectionRef}>
-        <Title style={{ paddingTop: "0.5em" }}>Experience</Title>
+    <Tile colour={colours.primary} ref={experienceRef}>
+      <ContentContainer
+        style={{
+          paddingBottom: "1em"
+        }}
+      >
+        <Title>Experience</Title>
         {experienceData.map((experience, i) => (
           <div key={i}>
             <div

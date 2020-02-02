@@ -36,42 +36,6 @@ const data = [
     name: "Other Things",
     githubLink: "https://github.com/taq2/forum-app",
     appLink: "https://github.com/taq2/forum-app"
-  },
-  {
-    img: whoHasTheSpotlight,
-    name: "Things",
-    githubLink: "https://github.com/taq2/forum-app",
-    appLink: "https://github.com/taq2/forum-app"
-  },
-  {
-    img: whoHasTheSpotlight,
-    name: "Other Things",
-    githubLink: "https://github.com/taq2/forum-app",
-    appLink: "https://github.com/taq2/forum-app"
-  },
-  {
-    img: whoHasTheSpotlight,
-    name: "Other Things",
-    githubLink: "https://github.com/taq2/forum-app",
-    appLink: "https://github.com/taq2/forum-app"
-  },
-  {
-    img: whoHasTheSpotlight,
-    name: "Things",
-    githubLink: "https://github.com/taq2/forum-app",
-    appLink: "https://github.com/taq2/forum-app"
-  },
-  {
-    img: whoHasTheSpotlight,
-    name: "Other Things",
-    githubLink: "https://github.com/taq2/forum-app",
-    appLink: "https://github.com/taq2/forum-app"
-  },
-  {
-    img: whoHasTheSpotlight,
-    name: "Other Things",
-    githubLink: "https://github.com/taq2/forum-app",
-    appLink: "https://github.com/taq2/forum-app"
   }
 ];
 

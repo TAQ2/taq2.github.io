@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
-import { FaHome } from "react-icons/fa";
 
-import Link from "./components/Link";
 import Title from "./components/Title";
 import { colours, screenBreakpoints } from "./theme";
 import galleryData from "./galleryData";
@@ -81,8 +79,9 @@ function Piece({ img, name, githubLink, appLink }) {
         alt={name}
         src={img}
         style={{
-          height: 300,
-          width: 300,
+          height: 280,
+          width: 280,
+
           borderRadius: "50%",
           filter: isHovered && "grayscale(50%)",
           border: `5px solid ${colours.secondaryLight}`
@@ -93,15 +92,12 @@ function Piece({ img, name, githubLink, appLink }) {
   );
 }
 
-export default function Gallery() {
+export default function Gallery({ galleryRef }) {
   return (
-    <div style={{ color: colours.secondary, marginBottom: "1em" }}>
-      <Link
-        to="/"
-        style={{ position: "absolute", top: 5, left: 5, border: "unset" }}
-      >
-        <FaHome size={30} />
-      </Link>
+    <div
+      style={{ color: colours.secondary, marginBottom: "1em" }}
+      ref={galleryRef}
+    >
       <Title style={{ backgroundColor: colours.primary }}>Gallery</Title>
       <ContentContainer
         style={{

@@ -1,46 +1,66 @@
-import React, { useEffect, useState } from "react";
-import { Route } from "react-router-dom";
+import React, { useRef } from "react";
 
-import Home from "./Home";
 import Labs from "./Labs";
 import Gallery from "./Gallery";
-import Footer from "./Footer";
+import ContactTile from "./ContactTile";
+import NavigationBar from "./NavigationBar";
 
-function useIsScrollZero() {
-  const [scrollY, setScrollY] = useState(window.scrollY === 0);
+import LandingTile from "./LandingTile";
+import SummaryTile from "./SummaryTile";
+import ExperienceTile from "./ExperienceTile";
+import SkillsTile from "./SkillsTile";
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (true) {
-        setScrollY(window.scrollY === 0);
-      }
-    };
+// function useIsScrollZero() {
+//   const [scrollY, setScrollY] = useState(window.scrollY === 0);
 
-    window.addEventListener("scroll", handleScroll);
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (true) {
+//         setScrollY(window.scrollY === 0);
+//       }
+//     };
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+//     window.addEventListener("scroll", handleScroll);
 
-  return scrollY;
-}
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   return scrollY;
+// }
 
 export default function App() {
-  const isScrollZero = useIsScrollZero();
+  const summaryRef = useRef(null);
+  const skillsRef = useRef(null);
+  const experienceRef = useRef(null);
+  const labsRef = useRef(null);
+  const galleryRef = useRef(null);
+  const contactRef = useRef(null);
 
   return (
     <>
-      <Route path="/" exact>
-        <Home />
-        {!isScrollZero && <Footer isHomePage />}
-      </Route>
-      <Route path="/labs">
-        <Labs />
-        <Footer />
-      </Route>
-      <Route path="/gallery">
-        <Gallery />
-        <Footer />
-      </Route>
+      <LandingTile
+        onClick={() => {
+          window.scrollTo({
+            top: summaryRef.current.offsetTop,
+            left: 0,
+            behavior: "smooth"
+          });
+        }}
+      />
+      <NavigationBar
+        summaryRef={summaryRef}
+        skillsRef={skillsRef}
+        experienceRef={experienceRef}
+        labsRef={labsRef}
+        galleryRef={galleryRef}
+        contactRef={contactRef}
+      />
+      <SummaryTile summaryRef={summaryRef} />
+      <SkillsTile skillsRef={skillsRef} />
+      <ExperienceTile experienceRef={experienceRef} />
+      <Labs labsRef={labsRef} />
+      <Gallery galleryRef={galleryRef} />
+      <ContactTile contactRef={contactRef} />
     </>
   );
 }
