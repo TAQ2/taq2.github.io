@@ -77,7 +77,7 @@ const Quote = styled.i`
   text-align: center;
 
   @media (max-width: ${screenBreakpoints.small}px) {
-    margin-bottom: 2em;
+    display: none;
   }
 `;
 
@@ -137,10 +137,8 @@ export default function LandingTile({ onClick }) {
             Full Stack Web Developer
           </div>
           <Quote>
-            I'm a London based developer, specialising in React with over 4
-            years of professional experience. I love building and designing
-            websites but also have a strong interest in how that influences
-            business.
+            I love building and designing websites especially in React but also
+            have a strong interest in how that influences business.
           </Quote>
           <LinkContainer>
             <Link

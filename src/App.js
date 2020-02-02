@@ -10,24 +10,6 @@ import SummaryTile from "./SummaryTile";
 import ExperienceTile from "./ExperienceTile";
 import SkillsTile from "./SkillsTile";
 
-// function useIsScrollZero() {
-//   const [scrollY, setScrollY] = useState(window.scrollY === 0);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (true) {
-//         setScrollY(window.scrollY === 0);
-//       }
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   return scrollY;
-// }
-
 export default function App() {
   const summaryRef = useRef(null);
   const skillsRef = useRef(null);

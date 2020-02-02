@@ -23,9 +23,12 @@ const Item = styled.div`
 const StyledTile = styled(Tile)`
   display: flex;
   align-items: center;
+  @media (max-width: ${screenBreakpoints.desktop}px) {
+    padding: 4em 1em;
+  }
+
   @media (max-width: ${screenBreakpoints.small}px) {
     height: unset;
-    padding: 2em 1em;
   }
 `;
 

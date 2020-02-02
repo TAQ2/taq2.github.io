@@ -25,6 +25,7 @@ const Container = styled.div`
 const ImageContainer = styled.a`
   width: 350px;
   min-width: 300px;
+  max-width: 100%;
   margin-bottom: 2em;
   margin-right: 2em;
 

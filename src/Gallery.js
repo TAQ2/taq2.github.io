@@ -49,6 +49,7 @@ function Piece({ img, name, githubLink, appLink }) {
             width: "30%",
             textAlign: "center",
             backgroundColor: colours.primary,
+            color: colours.secondary,
             borderRadius: 5,
             padding: 5,
             textDecoration: "none"
@@ -64,6 +65,7 @@ function Piece({ img, name, githubLink, appLink }) {
             width: "30%",
             textAlign: "center",
             backgroundColor: colours.primary,
+            color: colours.secondary,
             borderRadius: 5,
             padding: 5,
             textDecoration: "none"

@@ -17,7 +17,12 @@ export default function ExperienceTile({ experienceRef }) {
       >
         <Title>Experience</Title>
         {experienceData.map((experience, i) => (
-          <div key={i}>
+          <div
+            key={i}
+            style={{
+              marginBottom: "2em"
+            }}
+          >
             <div
               style={{
                 fontSize: "2em",
