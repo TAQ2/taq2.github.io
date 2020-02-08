@@ -99,10 +99,10 @@ export default function Labs({ labsRef }) {
       </Title>
       <ContentContainer>
         <div style={{ marginBottom: "2.5em" }}>
-          This showcases the apps that I have built, designed and deployed on my
-          own. I generally find building front-end applications with React and
-          deploying them on github pages to be the most interesting workflow and
-          also demonstrates my interest in design.
+          This showcases the apps that I have built in my spare time, designed
+          and deployed on my own. These examples use React and are deployed them
+          on github pages. I like to provoke my interest in design by making
+          apps look simple but beautiful and responsive.
         </div>
         {labData.map((data, i) => (
           <Lab {...data} key={i} />

@@ -5,12 +5,12 @@ export default [
     from: "10/2018",
     to: "08/2019",
     description:
-      "Delivered a wide range of web projects relating to city design",
+      "Delivered a wide range of web projects relating to the city planning industry",
     bullets: [
       "Built React UIs around Google Maps using their API for complex spatial calculations to display different datasets",
-      "Large focus on responsive design and UX upgrades that increased user adoption by 23%",
-      "Worked on a wide range of codebases, learned PHP on the job and could adapt from coding in a team or independently whenever appropriate",
-      "Engaging directly with the company's clients to turn their business requirements into software"
+      "Large focus on responsive design and UX upgrades to increase user adoption by 23%",
+      "Worked on a wide range of codebases, learned PHP on the job and would adapt from coding in a team or independently whenever appropriate",
+      "Engaged directly with the company's clients to turn their business requirements into software"
     ]
   },
   {
@@ -19,12 +19,12 @@ export default [
     from: "02/2016",
     to: "09/2018",
     description:
-      "Developed features for the company's website to optimise sales of windows and doors which are characterised by complex design and manufacturing rules",
+      "Developed features for the company's website to optimise sales and improve data modelling of windows and doors which are characterised by complex design and manufacturing rules",
     bullets: [
-      "Reduced technical debt by rewriting a feature-rich 20 year-old spaghetti code base in React making sure it was readable and testable",
-      "Transitioned from a junior to a mentor and manager of five developers within two years, due to intense focus of taking work problems and finding solutions in my own time",
-      "Expanded into surrounding roles e.g business/data analyst, product owner, testing, quality assurance and devops, which reduced bottlenecks in the team and also increased my skillset",
-      "Integral point of contact for other departments ranging from salespeople to product experts, ensuring all technical information is communicated clearly and effectively"
+      "Reduced technical debt by rewriting a feature-rich 20 year-old spaghetti code base in React ensuring it was readable and testable",
+      "Transitioned from a junior to a mentor and manager of five developers in under two years, thanks to my intense focus of identifying and tackling work problems and finding solutions in my own time",
+      "Expanded into surrounding roles e.g. business/data analyst, product owner, testing, quality assurance and devops, which reduced bottlenecks in the team and also increased my skillset",
+      "Acted as an integral point of contact for other departments ranging from salespeople to product experts, communicating all technical information clearly and effectively"
     ]
   },
   {
@@ -33,11 +33,11 @@ export default [
     from: "10/2015",
     to: "02/2016",
     description:
-      "Tested children's vocabulary games that were redeveloped to transition from the US to the UK market",
+      "Tested children's vocabulary games that were being redeveloped from the US to the UK market",
     bullets: [
-      "Testing areas of the system by following prepared scripts and recording any issues",
-      "Retesting fixed issues following meticulous step by step instructions",
-      "Responding to customer emails and dealing with their requests in a concise and professional manner" // @Incomplete -  & Customer Support Officer
+      "Tested areas of the system by following prepared scripts and recording any issues",
+      "Retested fixed issues following meticulous step by step instructions",
+      "Responded to customer emails and dealt with their requests in a concise and professional manner"
     ]
   },
   {

@@ -109,8 +109,7 @@ export default function Gallery({ galleryRef }) {
         }}
       >
         <div style={{ marginBottom: "1em" }}>
-          I find making programmatic art is a relaxing hobby. Just doing web
-          development makes me narrow-minded so I use basic physics and
+          I find making programmatic art is a relaxing hobby. I use physics and
           animation concepts in p5.js which helps me flex my coding variability.
         </div>
         {galleryData.map((data, i) => (

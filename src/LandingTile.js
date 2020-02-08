@@ -114,6 +114,7 @@ export default function LandingTile({ onClick }) {
         display: "flex",
         alignItems: "center",
         backgroundColor: colours.secondary,
+        height: "100vh",
         backgroundImage:
           "repeating-linear-gradient(135deg, transparent, rgba(255,255,255,.02) 15px)"
       }}
@@ -137,8 +138,8 @@ export default function LandingTile({ onClick }) {
             Full Stack Web Developer
           </div>
           <Quote>
-            I love building and designing websites especially in React but also
-            have a strong interest in how that influences business.
+            I love building and designing websites, especially in React, but
+            also have a strong interest in how that influences business.
           </Quote>
           <LinkContainer>
             <Link

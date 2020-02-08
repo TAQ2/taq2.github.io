@@ -4,7 +4,7 @@ import mappingToolImg from "./assets/labs/mapping-tool-screenshot.png";
 const data = [
   {
     img: mappingToolImg,
-    name: "Mapping Tool", // @Incomplete - boring name
+    name: "Mapping Tool",
     description:
       "I wanted to make an app that provokes the concepts of data visualisation. Using the Mapbox library, users can view different metrics wrangled from different sources and navigate using a sleek interface.",
     githubLink: "https://github.com/taq2/mapping-tool",
@@ -20,7 +20,7 @@ const data = [
   },
   {
     img: fakeLatinNewsImg,
-    name: "This Website!", // @Incomplete - take a pic when done
+    name: "This Website!",
     description:
       "Using responsive design, simple animation and no templates, I display the work I have done. Not only showing my CV and portfolio but taking it a step further to display the art that I have produced.",
 

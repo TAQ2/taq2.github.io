@@ -1,18 +1,30 @@
 started on the 14th
 
+design
+    - mobile - text-align: justify; of descriptions?
+    - mobile - when clicking the draw on the navigation, the tabs should open smoothly
+    - do the colours make sense on the different pages - maybe summary is background pink and the rest is white with pink titles
+    - highlight the naviagtion button when tile is visable
+    - animations of text
+
 Content
     - extra curricular things?
     - Run everything through grammarly
+    - does labs make sense?
 
 AFTER CONTENT
 edit colours - colour theory?
+update photo for this website
+Ensure gallery is not repeating
+Ensure link to the mapping tool works
+mobile clicking of a gallery item doesn't work
 
 OUT OF SCOPE?
-highlight the naviagtion button when tile is visable
+
 animate the landing tile with a canvas or rebass-like animation
 
 OTHER REPOS:
-Tic tac toe - takes so long to load?
+Tic tac toe - takes so long to load? and is not on this website
 Who has the spotlight
     - timings changes with the dims of the screen
     - is the code good
@@ -20,3 +32,4 @@ monopoly calculator as a lab?
 Maps:
     - deploy
     - support mobile?
+    - Mapping tool is a boring name

@@ -18,34 +18,34 @@ export default [
   {
     title: "Business First Mentality",
     description:
-      "The art of code is essential. But how computing can solve complex business problems to improve functionality, communication and profitability is much more interesting and important.",
+      "The art of code is essential. But how the web can solve complex business problems to improve functionality, communication and profitability is my focal point.",
     icon: FaRegChartBar
   },
   {
     title: "High Social Intelligence",
     description:
-      "Always being conscious of communication and the level of detail I need to use when explaining concepts to members of any department. This allows me to fit firmly between developers and stakeholders.",
+      "I am harmonious with developers and all types of stakeholders. This is because I am conscious of communication, when to go into detail and when break down concepts.",
     icon: TiGroup
   },
   {
     title: "100% Self Taught",
     description:
-      "After doing a degree in an unrelated field I changed career, taught myself to code and gained experience. Coming from a psychology background rather than computer science grants me an extra perspective.",
+      "Coming from a degree in a psychology background means that I have learned about human behviour. Now that I have changed direction, taught myself to code and gained experience, I can apply all that I have learned into my work.",
     icon: FaPencilAlt
   },
   {
     title: "Innovative",
     description:
-      "I prototyped an app in my own time which was so well received that I was allocated resources to complete it. I worked closely with the directors to facilitate new features while incorporating my ideas.",
+      "I prototyped an app in my own time which was so well received within company that I was allocated resources to complete it. I worked closely with the directors to facilitate new features while incorporating my ideas.",
     icon: FaLightbulb
   },
   {
     title: "Socially Responsible",
     description: (
       <span>
-        I attend meetups that use mapping tools to manually draw and label
-        satellite images of areas in humanitarian crisis to improve logistics of
-        aid. More info about the project{" "}
+        I regularly attend meetups that use mapping tools to manually draw and
+        label satellite images of areas in humanitarian crisis to improve
+        logistics of aid. More info about the project{" "}
         <a
           href="https://www.missingmaps.org/"
           target="_blank"

@@ -12,10 +12,14 @@ const Item = styled.div`
   text-align: center;
 
   @media (max-width: ${screenBreakpoints.maxContentWidth}px) {
+    margin-left: auto;
+    margin-right: auto;
     width: 45%;
   }
 
   @media (max-width: ${screenBreakpoints.small}px) {
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
   }
 `;
@@ -26,22 +30,11 @@ const StyledTile = styled(Tile)`
   @media (max-width: ${screenBreakpoints.desktop}px) {
     padding: 4em 1em;
   }
-
-  @media (max-width: ${screenBreakpoints.small}px) {
-    height: unset;
-  }
 `;
 
 export default function SummaryTile({ summaryRef }) {
   return (
-    <StyledTile
-      colour={colours.primary}
-      style={{
-        display: "flex",
-        alignItems: "center"
-      }}
-      ref={summaryRef}
-    >
+    <StyledTile colour={colours.primary} ref={summaryRef}>
       <ContentContainer>
         <div
           style={{
