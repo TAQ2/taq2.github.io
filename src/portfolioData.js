@@ -1,5 +1,6 @@
-import fakeLatinNewsImg from "./assets/labs/fake-latin-news-screenshot.png";
-import mappingToolImg from "./assets/labs/mapping-tool-screenshot.png";
+import fakeLatinNewsImg from "./assets/portfolio/fake-latin-news-screenshot.png";
+import mappingToolImg from "./assets/portfolio/mapping-tool-screenshot.png";
+import websiteImg from "./assets/portfolio/website.png";
 
 const data = [
   {
@@ -19,7 +20,7 @@ const data = [
     appLink: "https://taq2.github.io/fake-latin-news"
   },
   {
-    img: fakeLatinNewsImg,
+    img: websiteImg,
     name: "This Website!",
     description:
       "Using responsive design, simple animation and no templates, I display the work I have done. Not only showing my CV and portfolio but taking it a step further to display the art that I have produced.",

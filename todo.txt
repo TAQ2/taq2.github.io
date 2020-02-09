@@ -36,3 +36,4 @@ Maps:
     - deploy
     - support mobile?
     - Mapping tool is a boring name
+    - update the picture on porfolio website
