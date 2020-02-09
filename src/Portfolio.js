@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import ContentContainer from "./components/ContentContainer";
 import Title from "./components/Title";
-import labData from "./labData";
+import portfolioData from "./portfolioData";
 import { colours, screenBreakpoints } from "./theme";
 
 const Container = styled.div`
@@ -87,24 +87,24 @@ function Lab({ name, img, description, githubLink, appLink }) {
   );
 }
 
-export default function Labs({ labsRef }) {
+export default function Portfolio({ portfolioRef }) {
   return (
-    <div style={{ color: colours.secondary }} ref={labsRef}>
+    <div style={{ color: colours.secondary }} ref={portfolioRef}>
       <Title
         style={{
           backgroundColor: "white"
         }}
       >
-        Labs
+        Portfolio
       </Title>
       <ContentContainer>
         <div style={{ marginBottom: "2.5em" }}>
           This showcases the apps that I have built in my spare time, designed
-          and deployed on my own. These examples use React and are deployed them
-          on github pages. I like to provoke my interest in design by making
-          apps look simple but beautiful and responsive.
+          and deployed on my own. These examples use React and are deployed on
+          github pages. I like to provoke my interest in design by making apps
+          look simple but beautiful and responsive.
         </div>
-        {labData.map((data, i) => (
+        {portfolioData.map((data, i) => (
           <Lab {...data} key={i} />
         ))}
       </ContentContainer>

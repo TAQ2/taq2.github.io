@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import Labs from "./Labs";
+import Portfolio from "./Portfolio";
 import Gallery from "./Gallery";
 import ContactTile from "./ContactTile";
 import NavigationBar from "./NavigationBar";
@@ -14,7 +14,7 @@ export default function App() {
   const summaryRef = useRef(null);
   const skillsRef = useRef(null);
   const experienceRef = useRef(null);
-  const labsRef = useRef(null);
+  const portfolioRef = useRef(null);
   const galleryRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -33,14 +33,14 @@ export default function App() {
         summaryRef={summaryRef}
         skillsRef={skillsRef}
         experienceRef={experienceRef}
-        labsRef={labsRef}
+        portfolioRef={portfolioRef}
         galleryRef={galleryRef}
         contactRef={contactRef}
       />
       <SummaryTile summaryRef={summaryRef} />
       <SkillsTile skillsRef={skillsRef} />
       <ExperienceTile experienceRef={experienceRef} />
-      <Labs labsRef={labsRef} />
+      <Portfolio portfolioRef={portfolioRef} />
       <Gallery galleryRef={galleryRef} />
       <ContactTile contactRef={contactRef} />
     </>

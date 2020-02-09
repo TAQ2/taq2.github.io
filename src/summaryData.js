@@ -12,7 +12,7 @@ export default [
   {
     title: "Broad Coding Experience",
     description:
-      "I have used a wide array of technologies, primarily in the javascript ecosystem. Having a birds-eye view of the architecture allows quick adoption of codebases and workflows.",
+      "I have extensive experience in a wide array of technologies, primarily in the javascript ecosystem. Working with a bird's-eye view of the architecture enables me to quickly adopt codebases and workflows.",
     icon: FaBook
   },
   {
@@ -24,19 +24,19 @@ export default [
   {
     title: "High Social Intelligence",
     description:
-      "I am harmonious with developers and all types of stakeholders. This is because I am conscious of communication, when to go into detail and when break down concepts.",
+      "I understand and anticipate my client’s needs by simplifying complexity and communicating it in a way they understand. Meaning I can seamlessly work with developers and stakeholders.",
     icon: TiGroup
   },
   {
     title: "100% Self Taught",
     description:
-      "Coming from a degree in a psychology background means that I have learned about human behviour. Now that I have changed direction, taught myself to code and gained experience, I can apply all that I have learned into my work.",
+      "Coming from a degree in a psychology background means that I have learned about human behaviour. Now that I have changed direction, taught myself to code and gained experience, I can apply all that I have learned into my work.",
     icon: FaPencilAlt
   },
   {
     title: "Innovative",
     description:
-      "I prototyped an app in my own time which was so well received within company that I was allocated resources to complete it. I worked closely with the directors to facilitate new features while incorporating my ideas.",
+      "I prototyped an app in my own time which was so well received within the company that I was allocated resources to complete it. I worked closely with the directors to facilitate new features while incorporating my ideas.",
     icon: FaLightbulb
   },
   {

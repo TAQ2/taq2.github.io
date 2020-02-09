@@ -1,8 +1,10 @@
 started on the 14th
 
 design
+    - maps page looks weird
     - mobile - text-align: justify; of descriptions?
     - mobile - when clicking the draw on the navigation, the tabs should open smoothly
+    - clicking gallery piece is weird
     - do the colours make sense on the different pages - maybe summary is background pink and the rest is white with pink titles
     - highlight the naviagtion button when tile is visable
     - animations of text
@@ -10,9 +12,10 @@ design
 Content
     - extra curricular things?
     - Run everything through grammarly
-    - does labs make sense?
+
 
 AFTER CONTENT
+switch off gallery
 edit colours - colour theory?
 update photo for this website
 Ensure gallery is not repeating

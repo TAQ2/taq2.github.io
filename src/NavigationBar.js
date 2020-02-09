@@ -51,15 +51,20 @@ export default function Name({
   summaryRef,
   skillsRef,
   experienceRef,
-  labsRef,
+  portfolioRef,
   galleryRef,
   contactRef
 }) {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
-  const scrollToSection = (ref, isHack) => {
-    // @Incomplete - offsetting by 200 on mobile
+
+  const handleClickNavItem = (ref, isMobile) => () => {
+    if (isMobile) {
+      setIsNavbarExpanded(false);
+    }
+
+    // @Incomplete - offsetting by 200 on mobile which is hack
     window.scrollTo({
-      top: isHack ? ref.current.offsetTop - 200 : ref.current.offsetTop,
+      top: isMobile ? ref.current.offsetTop - 200 : ref.current.offsetTop,
       left: 0,
       behavior: "smooth"
     });
@@ -68,67 +73,30 @@ export default function Name({
   return (
     <NavigationBar>
       <ButtonContainer>
-        <Button onClick={() => scrollToSection(summaryRef)}>Summary</Button>
-        <Button onClick={() => scrollToSection(skillsRef)}>Skills</Button>
-        <Button onClick={() => scrollToSection(experienceRef)}>
-          Experience
-        </Button>
-        <Button onClick={() => scrollToSection(labsRef)}>Labs</Button>
-        <Button onClick={() => scrollToSection(galleryRef)}>Gallery</Button>
-        <Button onClick={() => scrollToSection(contactRef)} isLast>
+        <Button onClick={handleClickNavItem(summaryRef)}>Summary</Button>
+        <Button onClick={handleClickNavItem(skillsRef)}>Skills</Button>
+        <Button onClick={handleClickNavItem(experienceRef)}>Experience</Button>
+        <Button onClick={handleClickNavItem(portfolioRef)}>Portfolio</Button>
+        <Button onClick={handleClickNavItem(galleryRef)}>Gallery</Button>
+        <Button onClick={handleClickNavItem(contactRef)} isLast>
           Contact
         </Button>
       </ButtonContainer>
       <Icon onClick={() => setIsNavbarExpanded(!isNavbarExpanded)} />
-
       {isNavbarExpanded && (
         <DrawerContainer>
-          <Button
-            onClick={() => {
-              setIsNavbarExpanded(false);
-              scrollToSection(summaryRef, true);
-            }}
-          >
+          <Button onClick={handleClickNavItem(summaryRef, true)}>
             Summary
           </Button>
-          <Button
-            onClick={() => {
-              setIsNavbarExpanded(false);
-              scrollToSection(skillsRef, true);
-            }}
-          >
-            Skills
-          </Button>
-          <Button
-            onClick={() => {
-              setIsNavbarExpanded(false);
-              scrollToSection(experienceRef, true);
-            }}
-          >
+          <Button onClick={handleClickNavItem(skillsRef, true)}>Skills</Button>
+          <Button onClick={handleClickNavItem(experienceRef, true)}>
             Experience
           </Button>
-          <Button
-            onClick={() => {
-              setIsNavbarExpanded(false);
-              scrollToSection(labsRef, true);
-            }}
-          >
-            Labs
-          </Button>
-          <Button
-            onClick={() => {
-              setIsNavbarExpanded(false);
-              scrollToSection(galleryRef, true);
-            }}
-          >
+          <Button onClick={handleClickNavItem(portfolioRef, true)}>Labs</Button>
+          <Button onClick={handleClickNavItem(galleryRef, true)}>
             Gallery
           </Button>
-          <Button
-            onClick={() => {
-              setIsNavbarExpanded(false);
-              scrollToSection(contactRef, true);
-            }}
-          >
+          <Button onClick={handleClickNavItem(contactRef, true)}>
             Contact
           </Button>
         </DrawerContainer>
