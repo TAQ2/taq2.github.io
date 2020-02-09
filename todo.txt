@@ -12,12 +12,6 @@ talk about extra curricular things?
 animations of text
 safari smooth scroll doesn't work
 
-WHEN MAPS ARE DONE
-    - update the picture on porfolio website
-    - Ensure link to the mapping tool works on porfolio website
-    - Mapping tool is a boring name
-
-
 OTHER REPOS:
 Tic tac toe - takes so long to load? and is not on this website
 Who has the spotlight
@@ -25,5 +19,4 @@ Who has the spotlight
     - is the code good
 monopoly calculator as a lab?
 Maps:
-    - deploy
     - support mobile?
