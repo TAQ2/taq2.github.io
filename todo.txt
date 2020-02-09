@@ -24,5 +24,3 @@ monopoly calculator as a lab?
 Maps:
     - deploy
     - support mobile?
-    
-    

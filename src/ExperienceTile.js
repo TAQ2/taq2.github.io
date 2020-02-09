@@ -11,18 +11,9 @@ export default function ExperienceTile() {
   return (
     <Tile>
       <Title style={{ backgroundColor: colours.primary }}>Experience</Title>
-      <ContentContainer
-        style={{
-          paddingBottom: "1em"
-        }}
-      >
+      <ContentContainer style={{ paddingBottom: "1em" }}>
         {experienceData.map((experience, i) => (
-          <div
-            key={i}
-            style={{
-              marginBottom: "2em"
-            }}
-          >
+          <div key={i} style={{ marginBottom: "2em" }}>
             <div
               style={{
                 fontSize: "2em",
@@ -41,22 +32,12 @@ export default function ExperienceTile() {
             >
               {experience.company}
             </div>
-            <div
-              style={{
-                marginBottom: "1em"
-              }}
-            >
+            <div style={{ marginBottom: "1em" }}>
               <FaRegCalendarAlt style={{ marginRight: "1em" }} />
               <span>{experience.from}</span> - <span>{experience.to}</span>
             </div>
             {experience.description && (
-              <div
-                style={{
-                  fontWeight: "bold"
-                }}
-              >
-                {experience.description}
-              </div>
+              <div style={{ fontWeight: "bold" }}>{experience.description}</div>
             )}
             <ul>
               {experience.bullets.map((bullet, i) => (

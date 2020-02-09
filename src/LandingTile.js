@@ -149,12 +149,7 @@ export default function LandingTile({ onClick }) {
                 alignItems: "center"
               }}
             >
-              More{" "}
-              <FaArrowRight
-                style={{
-                  marginLeft: "0.2em"
-                }}
-              />
+              More <FaArrowRight style={{ marginLeft: "0.2em" }} />
             </Link>
           </LinkContainer>
         </TextContainer>
