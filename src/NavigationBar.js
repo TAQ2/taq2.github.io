@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { GoThreeBars } from "react-icons/go";
+import { animated, useSpring } from "react-spring";
 
 import { colours, screenBreakpoints } from "./theme";
 
@@ -45,12 +46,13 @@ const ButtonContainer = styled.div`
   }
 `;
 
-// @Cleanup - same as a div
-const DrawerContainer = styled.div``;
-
 export default function Name({ sections }) {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
   const navigationRef = useRef(null);
+
+  const animation = useSpring({
+    maxHeight: isNavbarExpanded ? "1000px" : "0px" // @Cleanup - 1000 is arbitary, does it need to be calculated?
+  });
 
   const handleClickNavItem = (ref, isMobile) => () => {
     if (isMobile) {
@@ -78,7 +80,7 @@ export default function Name({ sections }) {
       </ButtonContainer>
       <Icon onClick={() => setIsNavbarExpanded(!isNavbarExpanded)} />
       {isNavbarExpanded && (
-        <DrawerContainer>
+        <animated.div style={animation}>
           {sections.map((section, i) => (
             <Button
               key={i}
@@ -88,7 +90,7 @@ export default function Name({ sections }) {
               {section.title}
             </Button>
           ))}
-        </DrawerContainer>
+        </animated.div>
       )}
     </NavigationBar>
   );

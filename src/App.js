@@ -32,11 +32,11 @@ export default function App() {
       title: "Portfolio",
       ref: useRef(null)
     },
-    {
-      component: Gallery,
-      title: "Gallery",
-      ref: useRef(null)
-    },
+    // {
+    //   component: Gallery,
+    //   title: "Gallery",
+    //   ref: useRef(null)
+    // },
     {
       component: ContactTile,
       title: "Contact",

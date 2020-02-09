@@ -1,15 +1,11 @@
 started on the 14th
 
-design
-    - clicking gallery piece is weird on mobile chrome (iphone is fine)
-    - check its all fine when the window is not full height
-    - check its all fine when the window is massive
-    - animate the landing tile with a canvas or rebass-like animation
+- clicking gallery piece is weird on mobile chrome (iphone is fine)
 
-OUT OF SCOPE?
+NICE TO HAVE
+animate the landing tile with a canvas or rebass-like animation
+highlight the navigation button when tile is visible (stash is available) - but then the contact page will never be highlighted
 talk about extra curricular things?
-highlight the navigation button when tile is visible
-mobile - when clicking the draw on the navigation, the tabs should open smoothly
 animations of text
 safari smooth scroll doesn't work
 
