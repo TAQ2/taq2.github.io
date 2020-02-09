@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70ad9e57ad4f3c08c27367341d895ce6",
+    "revision": "969d68b9fc93a7bdf53724804ae65afa",
     "url": "/index.html"
   },
   {
-    "revision": "2a940ef2c3bdf3c199e3",
+    "revision": "301aa751abbae0f96860",
     "url": "/static/css/main.2e5e7a67.chunk.css"
   },
   {
-    "revision": "f71a36cab2f00c446f0d",
-    "url": "/static/js/2.bcc0491a.chunk.js"
+    "revision": "3830505e0ac4b8de8459",
+    "url": "/static/js/2.385184df.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/static/js/2.bcc0491a.chunk.js.LICENSE"
+    "url": "/static/js/2.385184df.chunk.js.LICENSE"
   },
   {
-    "revision": "2a940ef2c3bdf3c199e3",
-    "url": "/static/js/main.015d7880.chunk.js"
+    "revision": "301aa751abbae0f96860",
+    "url": "/static/js/main.8bdfb927.chunk.js"
   },
   {
     "revision": "96bc8da7da71b5a8b08a",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f96dabdb4c0d64351d1b7e2399e841f6",
     "url": "/static/media/my-skills-mindmap.f96dabdb.svg"
+  },
+  {
+    "revision": "4b5c1611fd0d8aa17cc8c02efbd3b559",
+    "url": "/static/media/website.4b5c1611.png"
   },
   {
     "revision": "c7e8b44e874b4f3909ddd27a3be47a2f",
