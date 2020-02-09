@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { GoThreeBars } from "react-icons/go";
 
@@ -45,6 +45,7 @@ const ButtonContainer = styled.div`
   }
 `;
 
+// @Cleanup - same as a div
 const DrawerContainer = styled.div``;
 
 export default function Name({
@@ -56,22 +57,21 @@ export default function Name({
   contactRef
 }) {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
+  const navigationRef = useRef(null);
 
   const handleClickNavItem = (ref, isMobile) => () => {
     if (isMobile) {
       setIsNavbarExpanded(false);
     }
 
-    // @Incomplete - offsetting by 200 on mobile which is hack
     window.scrollTo({
-      top: isMobile ? ref.current.offsetTop - 200 : ref.current.offsetTop,
-      left: 0,
+      top: ref.current.offsetTop - navigationRef.current.offsetHeight + 1,
       behavior: "smooth"
     });
   };
 
   return (
-    <NavigationBar>
+    <NavigationBar ref={navigationRef}>
       <ButtonContainer>
         <Button onClick={handleClickNavItem(summaryRef)}>Summary</Button>
         <Button onClick={handleClickNavItem(skillsRef)}>Skills</Button>
@@ -94,7 +94,9 @@ export default function Name({
           <Button onClick={handleClickNavItem(experienceRef, true)}>
             Experience
           </Button>
-          <Button onClick={handleClickNavItem(portfolioRef, true)}>Labs</Button>
+          <Button onClick={handleClickNavItem(portfolioRef, true)}>
+            Portfolio
+          </Button>
           {process.env.NODE_ENV === "development" && (
             <Button onClick={handleClickNavItem(galleryRef, true)}>
               Gallery

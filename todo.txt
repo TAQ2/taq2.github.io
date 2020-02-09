@@ -1,30 +1,23 @@
 started on the 14th
 
 design
-    - maps page looks weird
-    - mobile - text-align: justify; of descriptions?
-    - mobile - when clicking the draw on the navigation, the tabs should open smoothly
-    - clicking gallery piece is weird on mobile
-    - do titles look weird
-    - highlight the naviagtion button when tile is visable
-    
-
-Content
-    - extra curricular things?
-    - Run everything through grammarly
-
-
-AFTER CONTENT
-switch off gallery
-edit colours - colour theory?
-update photo for this website
-Ensure gallery is not repeating
-Ensure link to the mapping tool works
-mobile clicking of a gallery item doesn't work
+    - clicking gallery piece is weird on mobile chrome (iphone is fine)
+    - check its all fine when the window is not full height
+    - check its all fine when the window is massive
+    - animate the landing tile with a canvas or rebass-like animation
 
 OUT OF SCOPE?
+talk about extra curricular things?
+highlight the navigation button when tile is visible
+mobile - when clicking the draw on the navigation, the tabs should open smoothly
 animations of text
-animate the landing tile with a canvas or rebass-like animation
+safari smooth scroll doesn't work
+
+WHEN MAPS ARE DONE
+    - update the picture on porfolio website
+    - Ensure link to the mapping tool works on porfolio website
+    - Mapping tool is a boring name
+
 
 OTHER REPOS:
 Tic tac toe - takes so long to load? and is not on this website
@@ -35,5 +28,5 @@ monopoly calculator as a lab?
 Maps:
     - deploy
     - support mobile?
-    - Mapping tool is a boring name
-    - update the picture on porfolio website
+    
+    

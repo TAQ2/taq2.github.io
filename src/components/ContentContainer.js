@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import { screenBreakpoints } from "../theme";
 
+// @Cleanup - could this just be applied once, and then 100vh any titles
+
 export default styled.div`
   margin: 0 auto;
   max-width: ${screenBreakpoints.maxContentWidth}px;

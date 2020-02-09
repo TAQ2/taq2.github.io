@@ -11,8 +11,6 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 4em;
-  margin-right: 2em;
-  margin-left: 2em;
 
   @media (max-width: ${screenBreakpoints.tablet}px) {
     flex-direction: column;
@@ -23,14 +21,22 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.a`
-  width: 350px;
+  width: 50%;
   min-width: 300px;
   max-width: 100%;
-  margin-bottom: 2em;
   margin-right: 2em;
 
   @media (max-width: ${screenBreakpoints.tablet}px) {
+    width: 80%;
+    margin-bottom: 2em;
     margin-right: 0em;
+  }
+`;
+
+const TextContainer = styled.div`
+  width: 50%;
+  @media (max-width: ${screenBreakpoints.tablet}px) {
+    width: 80%;
   }
 `;
 
@@ -48,7 +54,7 @@ function Lab({ name, img, description, githubLink, appLink }) {
           href={appLink}
         />
       </ImageContainer>
-      <div>
+      <TextContainer>
         <div
           style={{
             marginBottom: "0.5em",
@@ -82,7 +88,7 @@ function Lab({ name, img, description, githubLink, appLink }) {
           </a>
         </div>
         <div>{description}</div>
-      </div>
+      </TextContainer>
     </Container>
   );
 }
@@ -92,7 +98,13 @@ export default function Portfolio({ portfolioRef }) {
     <div style={{ color: colours.secondary }} ref={portfolioRef}>
       <Title style={{ backgroundColor: colours.primary }}>Portfolio</Title>
       <ContentContainer>
-        <div style={{ margin: "1em 0 3em 0" }}>
+        <div
+          style={{
+            margin: "1em 0 3em 0",
+            fontWeight: "bold",
+            textAlign: "justify"
+          }}
+        >
           This showcases the apps that I have built in my spare time, designed
           and deployed on my own. These examples use React and are deployed on
           github pages. I like to provoke my interest in design by making apps

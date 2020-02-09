@@ -4,7 +4,9 @@ import styled from "styled-components";
 
 import { colours } from "../theme";
 
-const StyledLink = styled(animated.div)`
+// @Cleanup - do we even need this file?
+
+const StyledLink = styled(animated.button)`
   background-color: ${colours.primary};
   color: ${colours.secondary};
   border: 5px solid ${colours.secondaryLight};
@@ -12,6 +14,8 @@ const StyledLink = styled(animated.div)`
   cursor: pointer;
   border-radius: 10px;
   padding: 5px 10px;
+  font-size: 1em;
+  outline: 0;
 `;
 
 function Link({ children, onClick, style }) {

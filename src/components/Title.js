@@ -7,8 +7,7 @@ const Title = styled.div`
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.5em;
-  padding-bottom: 0.2em;
-  padding-top: 0.7em;
+  padding: 0.2em 0;
 
   color: ${colours.secondary};
   @media (max-width: ${screenBreakpoints.small}px) {

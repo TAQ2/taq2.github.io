@@ -83,13 +83,16 @@ function Piece({ img, name, githubLink, appLink }) {
         style={{
           height: 280,
           width: 280,
-
           borderRadius: "50%",
           filter: isHovered && "grayscale(50%)",
           border: `5px solid ${colours.secondaryLight}`
         }}
       />
-      <div style={{ textAlign: "center", fontWeight: "bold" }}>{name}</div>
+      <div
+        style={{ textAlign: "center", fontWeight: "bold", marginTop: "0.5em" }}
+      >
+        {name}
+      </div>
     </Container>
   );
 }
@@ -105,7 +108,13 @@ export default function Gallery({ galleryRef }) {
           justifyContent: "center"
         }}
       >
-        <div style={{ margin: "1em 0" }}>
+        <div
+          style={{
+            margin: "1em 0 1em 0",
+            fontWeight: "bold",
+            textAlign: "justify"
+          }}
+        >
           I find making programmatic art is a relaxing hobby. I use physics and
           animation concepts in p5.js which helps me flex my coding variability.
         </div>

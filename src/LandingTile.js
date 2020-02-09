@@ -125,7 +125,7 @@ export default function LandingTile({ onClick }) {
         </ImgContainer>
         <div style={{ width: "5%" }} />
         <TextContainer style={textAnimation}>
-          <Title style={{ color: colours.primary, marginBottom: "0" }}>
+          <Title style={{ color: colours.primary, marginBottom: 0 }}>
             Arjun Gupta
           </Title>
           <div
