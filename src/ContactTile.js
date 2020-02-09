@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { colours } from "./theme";
 import ContentContainer from "./components/ContentContainer";
 
-export default function ContactTile({ contactRef }) {
+export default function ContactTile() {
   return (
     <div
       style={{
@@ -13,7 +13,7 @@ export default function ContactTile({ contactRef }) {
         paddingTop: "1.5em"
       }}
     >
-      <ContentContainer style={{ textAlign: "center" }} ref={contactRef}>
+      <ContentContainer style={{ textAlign: "center" }}>
         <div style={{ fontSize: "3em", marginBottom: "0.5em" }}>
           <a href="mailto:arjungupta2110@gmail.com">
             <AiOutlineMail fill="black" />

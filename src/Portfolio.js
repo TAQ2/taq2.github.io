@@ -93,9 +93,9 @@ function Lab({ name, img, description, githubLink, appLink }) {
   );
 }
 
-export default function Portfolio({ portfolioRef }) {
+export default function Portfolio() {
   return (
-    <div style={{ color: colours.secondary }} ref={portfolioRef}>
+    <div style={{ color: colours.secondary }}>
       <Title style={{ backgroundColor: colours.primary }}>Portfolio</Title>
       <ContentContainer>
         <div

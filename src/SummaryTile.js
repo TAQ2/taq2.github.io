@@ -32,9 +32,9 @@ const StyledTile = styled(Tile)`
   }
 `;
 
-export default function SummaryTile({ summaryRef }) {
+export default function SummaryTile() {
   return (
-    <StyledTile colour={colours.primary} ref={summaryRef}>
+    <StyledTile colour={colours.primary}>
       <ContentContainer>
         <div
           style={{

@@ -48,14 +48,7 @@ const ButtonContainer = styled.div`
 // @Cleanup - same as a div
 const DrawerContainer = styled.div``;
 
-export default function Name({
-  summaryRef,
-  skillsRef,
-  experienceRef,
-  portfolioRef,
-  galleryRef,
-  contactRef
-}) {
+export default function Name({ sections }) {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
   const navigationRef = useRef(null);
 
@@ -73,38 +66,28 @@ export default function Name({
   return (
     <NavigationBar ref={navigationRef}>
       <ButtonContainer>
-        <Button onClick={handleClickNavItem(summaryRef)}>Summary</Button>
-        <Button onClick={handleClickNavItem(skillsRef)}>Skills</Button>
-        <Button onClick={handleClickNavItem(experienceRef)}>Experience</Button>
-        <Button onClick={handleClickNavItem(portfolioRef)}>Portfolio</Button>
-        {process.env.NODE_ENV === "development" && (
-          <Button onClick={handleClickNavItem(galleryRef)}>Gallery</Button>
-        )}
-        <Button onClick={handleClickNavItem(contactRef)} isLast>
-          Contact
-        </Button>
+        {sections.map((section, i) => (
+          <Button
+            key={i}
+            onClick={handleClickNavItem(section.ref)}
+            isLast={i === sections.length - 1}
+          >
+            {section.title}
+          </Button>
+        ))}
       </ButtonContainer>
       <Icon onClick={() => setIsNavbarExpanded(!isNavbarExpanded)} />
       {isNavbarExpanded && (
         <DrawerContainer>
-          <Button onClick={handleClickNavItem(summaryRef, true)}>
-            Summary
-          </Button>
-          <Button onClick={handleClickNavItem(skillsRef, true)}>Skills</Button>
-          <Button onClick={handleClickNavItem(experienceRef, true)}>
-            Experience
-          </Button>
-          <Button onClick={handleClickNavItem(portfolioRef, true)}>
-            Portfolio
-          </Button>
-          {process.env.NODE_ENV === "development" && (
-            <Button onClick={handleClickNavItem(galleryRef, true)}>
-              Gallery
+          {sections.map((section, i) => (
+            <Button
+              key={i}
+              onClick={handleClickNavItem(section.ref, true)}
+              isLast={false} // @Cleanup - isLast is bad naming
+            >
+              {section.title}
             </Button>
-          )}
-          <Button onClick={handleClickNavItem(contactRef, true)}>
-            Contact
-          </Button>
+          ))}
         </DrawerContainer>
       )}
     </NavigationBar>

@@ -97,9 +97,9 @@ function Piece({ img, name, githubLink, appLink }) {
   );
 }
 
-export default function Gallery({ galleryRef }) {
+export default function Gallery() {
   return (
-    <div style={{ color: colours.secondary }} ref={galleryRef}>
+    <div style={{ color: colours.secondary }}>
       <Title style={{ backgroundColor: colours.primary }}>Gallery</Title>
       <ContentContainer
         style={{

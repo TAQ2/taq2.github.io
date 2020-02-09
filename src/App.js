@@ -11,40 +11,56 @@ import ExperienceTile from "./ExperienceTile";
 import SkillsTile from "./SkillsTile";
 
 export default function App() {
-  const summaryRef = useRef(null);
-  const skillsRef = useRef(null);
-  const experienceRef = useRef(null);
-  const portfolioRef = useRef(null);
-  const galleryRef = useRef(null);
-  const contactRef = useRef(null);
+  const sections = [
+    {
+      component: SummaryTile,
+      title: "Summary",
+      ref: useRef(null)
+    },
+    {
+      component: SkillsTile,
+      title: "Skills",
+      ref: useRef(null)
+    },
+    {
+      component: ExperienceTile,
+      title: "Experience",
+      ref: useRef(null)
+    },
+    {
+      component: Portfolio,
+      title: "Portfolio",
+      ref: useRef(null)
+    },
+    {
+      component: Gallery,
+      title: "Gallery",
+      ref: useRef(null)
+    },
+    {
+      component: ContactTile,
+      title: "Contact",
+      ref: useRef(null)
+    }
+  ];
 
   return (
     <>
       <LandingTile
         onClick={() => {
           window.scrollTo({
-            top: summaryRef.current.offsetTop,
+            top: sections[0].ref.current.offsetTop,
             left: 0,
             behavior: "smooth"
           });
         }}
       />
-      <NavigationBar
-        summaryRef={summaryRef}
-        skillsRef={skillsRef}
-        experienceRef={experienceRef}
-        portfolioRef={portfolioRef}
-        galleryRef={galleryRef}
-        contactRef={contactRef}
-      />
-      <SummaryTile summaryRef={summaryRef} />
-      <SkillsTile skillsRef={skillsRef} />
-      <ExperienceTile experienceRef={experienceRef} />
-      <Portfolio portfolioRef={portfolioRef} />
-      {process.env.NODE_ENV === "development" && (
-        <Gallery galleryRef={galleryRef} />
-      )}
-      <ContactTile contactRef={contactRef} />
+      <NavigationBar sections={sections} />
+      {sections.map((section, i) => (
+        <div ref={section.ref} key={i}>
+          <section.component />
+        </div>
+      ))}
     </>
   );
 }

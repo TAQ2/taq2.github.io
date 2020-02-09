@@ -39,7 +39,7 @@ const StyledMindMapVertical = styled(MindMapVertical)`
   }
 `;
 
-export default function SummaryTile({ skillsRef }) {
+export default function SummaryTile() {
   return (
     <Tile
       colour="white"
@@ -47,7 +47,6 @@ export default function SummaryTile({ skillsRef }) {
         display: "flex",
         alignItems: "center"
       }}
-      ref={skillsRef}
     >
       <StyledMindMap />
       <StyledMindMapVertical />

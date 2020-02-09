@@ -7,9 +7,9 @@ import ContentContainer from "./components/ContentContainer";
 import Title from "./components/Title";
 import Tile from "./components/Tile";
 
-export default function ExperienceTile({ experienceRef }) {
+export default function ExperienceTile() {
   return (
-    <Tile ref={experienceRef}>
+    <Tile>
       <Title style={{ backgroundColor: colours.primary }}>Experience</Title>
       <ContentContainer
         style={{
