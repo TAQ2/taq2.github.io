@@ -9,13 +9,13 @@ import Tile from "./components/Tile";
 
 export default function ExperienceTile({ experienceRef }) {
   return (
-    <Tile colour={colours.primary} ref={experienceRef}>
+    <Tile ref={experienceRef}>
+      <Title style={{ backgroundColor: colours.primary }}>Experience</Title>
       <ContentContainer
         style={{
           paddingBottom: "1em"
         }}
       >
-        <Title>Experience</Title>
         {experienceData.map((experience, i) => (
           <div
             key={i}

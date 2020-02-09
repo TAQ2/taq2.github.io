@@ -4,10 +4,10 @@ design
     - maps page looks weird
     - mobile - text-align: justify; of descriptions?
     - mobile - when clicking the draw on the navigation, the tabs should open smoothly
-    - clicking gallery piece is weird
-    - do the colours make sense on the different pages - maybe summary is background pink and the rest is white with pink titles
+    - clicking gallery piece is weird on mobile
+    - do titles look weird
     - highlight the naviagtion button when tile is visable
-    - animations of text
+    
 
 Content
     - extra curricular things?
@@ -23,7 +23,7 @@ Ensure link to the mapping tool works
 mobile clicking of a gallery item doesn't work
 
 OUT OF SCOPE?
-
+animations of text
 animate the landing tile with a canvas or rebass-like animation
 
 OTHER REPOS:

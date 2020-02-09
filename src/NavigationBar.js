@@ -77,7 +77,9 @@ export default function Name({
         <Button onClick={handleClickNavItem(skillsRef)}>Skills</Button>
         <Button onClick={handleClickNavItem(experienceRef)}>Experience</Button>
         <Button onClick={handleClickNavItem(portfolioRef)}>Portfolio</Button>
-        <Button onClick={handleClickNavItem(galleryRef)}>Gallery</Button>
+        {process.env.NODE_ENV === "development" && (
+          <Button onClick={handleClickNavItem(galleryRef)}>Gallery</Button>
+        )}
         <Button onClick={handleClickNavItem(contactRef)} isLast>
           Contact
         </Button>
@@ -93,9 +95,11 @@ export default function Name({
             Experience
           </Button>
           <Button onClick={handleClickNavItem(portfolioRef, true)}>Labs</Button>
-          <Button onClick={handleClickNavItem(galleryRef, true)}>
-            Gallery
-          </Button>
+          {process.env.NODE_ENV === "development" && (
+            <Button onClick={handleClickNavItem(galleryRef, true)}>
+              Gallery
+            </Button>
+          )}
           <Button onClick={handleClickNavItem(contactRef, true)}>
             Contact
           </Button>

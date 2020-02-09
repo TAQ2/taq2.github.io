@@ -41,7 +41,9 @@ export default function App() {
       <SkillsTile skillsRef={skillsRef} />
       <ExperienceTile experienceRef={experienceRef} />
       <Portfolio portfolioRef={portfolioRef} />
-      <Gallery galleryRef={galleryRef} />
+      {process.env.NODE_ENV === "development" && (
+        <Gallery galleryRef={galleryRef} />
+      )}
       <ContactTile contactRef={contactRef} />
     </>
   );

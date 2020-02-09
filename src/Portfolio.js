@@ -90,15 +90,9 @@ function Lab({ name, img, description, githubLink, appLink }) {
 export default function Portfolio({ portfolioRef }) {
   return (
     <div style={{ color: colours.secondary }} ref={portfolioRef}>
-      <Title
-        style={{
-          backgroundColor: "white"
-        }}
-      >
-        Portfolio
-      </Title>
+      <Title style={{ backgroundColor: colours.primary }}>Portfolio</Title>
       <ContentContainer>
-        <div style={{ marginBottom: "2.5em" }}>
+        <div style={{ margin: "1em 0 3em 0" }}>
           This showcases the apps that I have built in my spare time, designed
           and deployed on my own. These examples use React and are deployed on
           github pages. I like to provoke my interest in design by making apps

@@ -96,10 +96,7 @@ function Piece({ img, name, githubLink, appLink }) {
 
 export default function Gallery({ galleryRef }) {
   return (
-    <div
-      style={{ color: colours.secondary, marginBottom: "1em" }}
-      ref={galleryRef}
-    >
+    <div style={{ color: colours.secondary }} ref={galleryRef}>
       <Title style={{ backgroundColor: colours.primary }}>Gallery</Title>
       <ContentContainer
         style={{
@@ -108,7 +105,7 @@ export default function Gallery({ galleryRef }) {
           justifyContent: "center"
         }}
       >
-        <div style={{ marginBottom: "1em" }}>
+        <div style={{ margin: "1em 0" }}>
           I find making programmatic art is a relaxing hobby. I use physics and
           animation concepts in p5.js which helps me flex my coding variability.
         </div>
