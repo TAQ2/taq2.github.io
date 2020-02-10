@@ -2,6 +2,7 @@ started on the 14th
 
 - clicking gallery piece is weird on mobile chrome (iphone is fine)
 - readme doesn't show on the master branch
+- add mongo to the list of skills
 
 NICE TO HAVE
 animate the landing tile with a canvas or rebass-like animation
