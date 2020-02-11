@@ -1,5 +1,6 @@
 started on the 14th
 
+- use rem or em?
 - clicking gallery piece is weird on mobile chrome (iphone is fine)
 - readme doesn't show on the master branch
 - add mongo, npm to the list of skills
