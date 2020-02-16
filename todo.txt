@@ -18,5 +18,3 @@ Who has the spotlight
     - timings changes with the dims of the screen
     - is the code good
 monopoly calculator as a lab?
-Maps:
-    - support mobile?
