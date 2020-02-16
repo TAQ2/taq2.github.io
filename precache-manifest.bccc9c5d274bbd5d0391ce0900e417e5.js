@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "390959717d262b07f62ec14673655a85",
+    "revision": "70d6e734820d6ba5b9e17909cde6ce0d",
     "url": "/index.html"
   },
   {
-    "revision": "ad0316e297d96f52cf1d",
+    "revision": "b7fb15706e55778d6362",
     "url": "/static/css/main.2e5e7a67.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.385184df.chunk.js.LICENSE"
   },
   {
-    "revision": "ad0316e297d96f52cf1d",
-    "url": "/static/js/main.e0f48e6c.chunk.js"
+    "revision": "b7fb15706e55778d6362",
+    "url": "/static/js/main.22e85a70.chunk.js"
   },
   {
     "revision": "96bc8da7da71b5a8b08a",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fake-latin-news-screenshot.bb78f5be.png"
   },
   {
-    "revision": "69863ceefe46de86f5f7f5866c11a86e",
-    "url": "/static/media/mapping-tool-screenshot.69863cee.png"
+    "revision": "d04b2ccc7315759b174376c0d36a402d",
+    "url": "/static/media/hindi-flashcards.d04b2ccc.png"
   },
   {
     "revision": "0799a5abefcd3b9a7c7583540abad27b",
