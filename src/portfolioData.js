@@ -15,7 +15,7 @@ const data = [
     img: hindiFlashcardsImg,
     name: "Hindi Flashcards",
     description:
-      "Taking Hindi lessons means that I frequently need to refresh my memory so I decided to use my coding skills to improve my learning experience. Its simple design makes it easy to consume, therefore I have shared it with my fellow peers and am seeing daily use on it.",
+      "Taking Hindi lessons means that I frequently need to refresh my memory so I decided to use my coding skills to improve my learning experience. Its simple design makes it easy to digest, therefore I have shared it with my fellow peers and am seeing daily use on it.",
     githubLink: "https://github.com/taq2/hindi-flashcards",
     appLink: "https://taq2.github.io/hindi-flashcards"
   },
