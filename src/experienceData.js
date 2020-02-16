@@ -45,6 +45,6 @@ export default [
     company: "University of Sussex",
     from: "09/2012",
     to: "06/2015",
-    bullets: ["Psychology and behaviour", "Cognitive Science", "Brain Biology"]
+    bullets: ["Psychology and Behaviour", "Cognitive Science", "Brain Biology"]
   }
 ];

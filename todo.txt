@@ -1,9 +1,12 @@
 started on the 14th
 
 - use rem or em?
+- www.taq2.github.io doesn't work
 - clicking gallery piece is weird on mobile chrome (iphone is fine)
 - readme doesn't show on the master branch
 - add mongo, npm to the list of skills
+- manifest.json
+- links in the index.html are not 
 
 NICE TO HAVE
 animate the landing tile with a canvas or rebass-like animation
