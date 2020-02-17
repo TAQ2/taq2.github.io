@@ -31,7 +31,9 @@ const data = [
     img: websiteImg,
     name: "This Website!",
     description:
-      "Using responsive design, simple animation and no templates, I display the work I have done. Not only showing my CV and portfolio but taking it a step further to display the art that I have produced.",
+      "Using responsive design, simple animation and no templates, I display the work I have done. I use React to showcase my experience and portfolio in a more user friendly method than a document could achieve.",
+
+    // "Using responsive design, simple animation and no templates, I display the work I have done. Not only showing my CV and portfolio but taking it a step further to display the art that I have produced.",
 
     githubLink: "https://github.com/TAQ2/taq2.github.io/tree/dev",
     appLink: "https://taq2.github.io/"
