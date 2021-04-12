@@ -20,11 +20,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "husky": {
-    "hooks": {
-      "post-commit": "npm run deploy"
-    }
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
