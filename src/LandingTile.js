@@ -96,14 +96,14 @@ export default function LandingTile({ onClick }) {
   const imgAnimation = useSpring({
     transform: "scale(1)",
     from: { transform: "scale(0.3)" },
-    config: { duration: 700 }
+    config: { duration: 700 },
   });
 
   const textAnimation = useSpring({
     opacity: 1,
     from: { opacity: 0 },
     delay: 900,
-    config: { duration: 1200 }
+    config: { duration: 1200 },
   });
 
   return (
@@ -116,7 +116,7 @@ export default function LandingTile({ onClick }) {
         backgroundColor: colours.secondary,
         height: "100vh",
         backgroundImage:
-          "repeating-linear-gradient(135deg, transparent, rgba(255,255,255,.02) 15px)"
+          "repeating-linear-gradient(135deg, transparent, rgba(255,255,255,.02) 15px)",
       }}
     >
       <Container>
@@ -132,7 +132,7 @@ export default function LandingTile({ onClick }) {
             style={{
               fontSize: "1.6em",
               marginBottom: "1.5em",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             Full Stack Web Developer
@@ -146,10 +146,10 @@ export default function LandingTile({ onClick }) {
               onClick={onClick}
               style={{
                 display: "flex",
-                alignItems: "center"
+                alignItems: "center",
               }}
             >
-              More <FaArrowRight style={{ marginLeft: "0.2em" }} />
+              More1 <FaArrowRight style={{ marginLeft: "0.2em" }} />
             </Link>
           </LinkContainer>
         </TextContainer>
