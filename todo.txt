@@ -1,10 +1,9 @@
 started on the 14th
 
 - use rem or em?
-- www.taq2.github.io doesn't work
 - clicking gallery piece is weird on mobile chrome (iphone is fine)
 - readme doesn't show on the master branch
-- add mongo, npm to the list of skills
+- add mongo, npm, cypress to the list of skills and remove php
 - manifest.json
 - links in the index.html are not 
 

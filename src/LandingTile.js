@@ -87,7 +87,7 @@ const Image = styled.img`
   width: auto;
   height: auto;
   border-radius: 50%;
-  border: 10px solid ${colours.secondaryLight};
+  border: 5px solid ${colours.secondaryLight};
 `;
 
 export default function LandingTile({ onClick }) {
@@ -138,8 +138,8 @@ export default function LandingTile({ onClick }) {
             Full Stack Web Developer
           </div>
           <Quote>
-            I love building and designing websites, especially in React, but
-            also have a strong interest in how that influences business.
+            I love building websites, especially in React, but also have a
+            strong interest in how that influences business.
           </Quote>
           <LinkContainer>
             <Link
@@ -149,7 +149,8 @@ export default function LandingTile({ onClick }) {
                 alignItems: "center",
               }}
             >
-              More1 <FaArrowRight style={{ marginLeft: "0.2em" }} />
+              More{" "}
+              <FaArrowRight style={{ marginLeft: "0.2em", height: "0.8em" }} />
             </Link>
           </LinkContainer>
         </TextContainer>
