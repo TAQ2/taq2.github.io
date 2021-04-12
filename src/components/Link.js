@@ -9,7 +9,7 @@ import { colours } from "../theme";
 const StyledLink = styled(animated.button)`
   background-color: ${colours.primary};
   color: ${colours.secondary};
-  border: 5px solid ${colours.secondaryLight};
+  border: 3px solid ${colours.secondaryLight};
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
@@ -22,7 +22,7 @@ function Link({ children, onClick, style }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const animation = useSpring({
-    transform: `scale(${isHovered ? 1.05 : 1})`
+    transform: `scale(${isHovered ? 1.05 : 1})`,
   });
 
   return (
