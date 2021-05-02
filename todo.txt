@@ -8,6 +8,8 @@ started on the 14th
 - links in the index.html are not 
 
 NICE TO HAVE
+on the icons of the first secion the graph looks much smaller than the book
+cta on landing page could just be an arrow at the bottom of the page
 animate the landing tile with a canvas or rebass-like animation
 highlight the navigation button when tile is visible (stash is available) - but then the contact page will never be highlighted
 talk about extra curricular things?
