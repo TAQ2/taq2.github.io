@@ -3,9 +3,10 @@ started on the 14th
 - use rem or em?
 - clicking gallery piece is weird on mobile chrome (iphone is fine)
 - readme doesn't show on the master branch
-- add mongo, npm, cypress to the list of skills and remove php
+- add mongo, npm, cypress, sentry to the list of skills and remove php
 - manifest.json
 - links in the index.html are not 
+
 
 NICE TO HAVE
 on the icons of the first secion the graph looks much smaller than the book
