@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e5e7a67.chunk.css",
-    "main.js": "/static/js/main.9461ce29.chunk.js",
-    "main.js.map": "/static/js/main.9461ce29.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.991c7d07.js",
-    "runtime-main.js.map": "/static/js/runtime-main.991c7d07.js.map",
-    "static/js/2.385184df.chunk.js": "/static/js/2.385184df.chunk.js",
-    "static/js/2.385184df.chunk.js.map": "/static/js/2.385184df.chunk.js.map",
+    "main.css": "/static/css/main.6f5e0c5c.chunk.css",
+    "main.js": "/static/js/main.d55f5cdd.chunk.js",
+    "main.js.map": "/static/js/main.d55f5cdd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.488c69be.js",
+    "runtime-main.js.map": "/static/js/runtime-main.488c69be.js.map",
+    "static/js/2.df928df2.chunk.js": "/static/js/2.df928df2.chunk.js",
+    "static/js/2.df928df2.chunk.js.map": "/static/js/2.df928df2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bfa6c04575bbce5418413f14c465176b.js": "/precache-manifest.bfa6c04575bbce5418413f14c465176b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.2e5e7a67.chunk.css.map": "/static/css/main.2e5e7a67.chunk.css.map",
-    "static/js/2.385184df.chunk.js.LICENSE": "/static/js/2.385184df.chunk.js.LICENSE",
-    "static/media/fake-latin-news-screenshot.png": "/static/media/fake-latin-news-screenshot.bb78f5be.png",
-    "static/media/hindi-flashcards.png": "/static/media/hindi-flashcards.d04b2ccc.png",
-    "static/media/me.jpg": "/static/media/me.0799a5ab.jpg",
-    "static/media/my-skills-mindmap-vertical.64e378f7.svg": "/static/media/my-skills-mindmap-vertical.64e378f7.svg",
-    "static/media/my-skills-mindmap.f96dabdb.svg": "/static/media/my-skills-mindmap.f96dabdb.svg",
-    "static/media/website.png": "/static/media/website.4b5c1611.png",
-    "static/media/who-has-the-spotlight-screenshot.png": "/static/media/who-has-the-spotlight-screenshot.c7e8b44e.png"
+    "static/css/main.6f5e0c5c.chunk.css.map": "/static/css/main.6f5e0c5c.chunk.css.map",
+    "static/js/2.df928df2.chunk.js.LICENSE.txt": "/static/js/2.df928df2.chunk.js.LICENSE.txt",
+    "static/media/fake-latin-news-screenshot.c0b7af55.png": "/static/media/fake-latin-news-screenshot.c0b7af55.png",
+    "static/media/hindi-flashcards.c83a7c3e.png": "/static/media/hindi-flashcards.c83a7c3e.png",
+    "static/media/me.e8e28fa6.jpg": "/static/media/me.e8e28fa6.jpg",
+    "static/media/my-skills-mindmap-vertical.14f34b8e.svg": "/static/media/my-skills-mindmap-vertical.14f34b8e.svg",
+    "static/media/my-skills-mindmap.8d96f7aa.svg": "/static/media/my-skills-mindmap.8d96f7aa.svg",
+    "static/media/website.74d46aae.png": "/static/media/website.74d46aae.png",
+    "static/media/who-has-the-spotlight-screenshot.3e81bacb.png": "/static/media/who-has-the-spotlight-screenshot.3e81bacb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.991c7d07.js",
-    "static/js/2.385184df.chunk.js",
-    "static/css/main.2e5e7a67.chunk.css",
-    "static/js/main.9461ce29.chunk.js"
+    "static/js/runtime-main.488c69be.js",
+    "static/js/2.df928df2.chunk.js",
+    "static/css/main.6f5e0c5c.chunk.css",
+    "static/js/main.d55f5cdd.chunk.js"
   ]
 }
