@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import ContentContainer from "./components/ContentContainer";
 import Title from "./components/Title";
@@ -49,7 +49,7 @@ function Lab({ name, img, description, githubLink, appLink }) {
           alt={name}
           style={{
             width: "100%",
-            border: "5px solid #eee"
+            border: "5px solid #eee",
           }}
           href={appLink}
         />
@@ -61,7 +61,7 @@ function Lab({ name, img, description, githubLink, appLink }) {
             display: "flex",
             justifyContent: "space-between",
             fontSize: "2em",
-            alignContent: "center"
+            alignContent: "center",
           }}
         >
           <a
@@ -71,7 +71,7 @@ function Lab({ name, img, description, githubLink, appLink }) {
             style={{
               fontWeight: "bold",
               color: colours.secondary,
-              textDecoration: "none"
+              textDecoration: "none",
             }}
           >
             {name}
@@ -79,7 +79,7 @@ function Lab({ name, img, description, githubLink, appLink }) {
           <a
             href={githubLink}
             style={{
-              color: "black"
+              color: "black",
             }}
             target="_blank"
             rel="noopener noreferrer"
@@ -102,7 +102,7 @@ export default function Portfolio() {
           style={{
             margin: "1em 0 3em 0",
             fontWeight: "bold",
-            textAlign: "justify"
+            textAlign: "justify",
           }}
         >
           This showcases the apps that I have built in my spare time, designed

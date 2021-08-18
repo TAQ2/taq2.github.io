@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import ContentContainer from "./components/ContentContainer";
 import Tile from "./components/Tile";
@@ -27,6 +27,7 @@ const Item = styled.div`
 const StyledTile = styled(Tile)`
   display: flex;
   align-items: center;
+
   @media (max-width: ${screenBreakpoints.desktop}px) {
     padding: 4em 1em;
   }
@@ -41,7 +42,7 @@ export default function SummaryTile() {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-between",
-            marginTop: "-5em" // nullify the margin of items on the top row of the flex wrap
+            marginTop: "-5em", // nullify the margin of items on the top row of the flex wrap
           }}
         >
           {data.map((item, i) => {
@@ -53,7 +54,7 @@ export default function SummaryTile() {
                 <div
                   style={{
                     fontWeight: "bold",
-                    margin: "1em 0"
+                    margin: "1em 0",
                   }}
                 >
                   {item.title}

@@ -18,7 +18,8 @@ export default function ExperienceTile() {
               style={{
                 fontSize: "2em",
                 fontWeight: "bold",
-                color: colours.secondary
+                color: colours.secondary,
+                marginBottom: "0.3em",
               }}
             >
               {experience.jobTitle}
@@ -27,7 +28,7 @@ export default function ExperienceTile() {
               style={{
                 fontSize: "1.5em",
                 color: colours.tertiary,
-                marginBottom: "0.5em"
+                marginBottom: "0.5em",
               }}
             >
               {experience.company}
@@ -45,7 +46,7 @@ export default function ExperienceTile() {
                   key={i}
                   style={{
                     lineHeight: "1.5em",
-                    listStyleType: "square"
+                    listStyleType: "square",
                   }}
                 >
                   {bullet}

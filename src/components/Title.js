@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { screenBreakpoints, colours } from "../theme";
 
@@ -6,7 +6,7 @@ const Title = styled.div`
   font-size: 4em;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   padding: 0.2em 0;
 
   color: ${colours.secondary};

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { colours } from "../theme";
 

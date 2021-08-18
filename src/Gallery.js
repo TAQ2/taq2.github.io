@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { useSpring, animated } from "react-spring";
 
 import Title from "./components/Title";
@@ -20,7 +20,7 @@ function Piece({ img, name, githubLink, appLink }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const animation = useSpring({
-    transform: `translateY(${isHovered ? -20 : 0}px)`
+    transform: `translateY(${isHovered ? -20 : 0}px)`,
   });
 
   return (
@@ -30,7 +30,7 @@ function Piece({ img, name, githubLink, appLink }) {
       style={{
         padding: "1em",
         marginBottom: "1em",
-        ...animation
+        ...animation,
       }}
     >
       <div
@@ -41,7 +41,7 @@ function Piece({ img, name, githubLink, appLink }) {
           justifyContent: "space-between",
           padding: "0 10%",
           opacity: isHovered ? 1 : 0,
-          zIndex: 1
+          zIndex: 1,
         }}
       >
         <a
@@ -52,7 +52,7 @@ function Piece({ img, name, githubLink, appLink }) {
             color: colours.secondary,
             borderRadius: 5,
             padding: 5,
-            textDecoration: "none"
+            textDecoration: "none",
           }}
           target="_blank"
           rel="noopener noreferrer"
@@ -68,7 +68,7 @@ function Piece({ img, name, githubLink, appLink }) {
             color: colours.secondary,
             borderRadius: 5,
             padding: 5,
-            textDecoration: "none"
+            textDecoration: "none",
           }}
           target="_blank"
           rel="noopener noreferrer"
@@ -85,7 +85,7 @@ function Piece({ img, name, githubLink, appLink }) {
           width: 280,
           borderRadius: "50%",
           filter: isHovered && "grayscale(50%)",
-          border: `5px solid ${colours.secondaryLight}`
+          border: `5px solid ${colours.secondaryLight}`,
         }}
       />
       <div
@@ -105,14 +105,14 @@ export default function Gallery() {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <div
           style={{
             margin: "1em 0 1em 0",
             fontWeight: "bold",
-            textAlign: "justify"
+            textAlign: "justify",
           }}
         >
           I find making programmatic art is a relaxing hobby. I use physics and

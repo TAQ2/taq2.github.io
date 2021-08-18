@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { ReactComponent as MindMap } from "./assets/my-skills-mindmap.svg";
 import { ReactComponent as MindMapVertical } from "./assets/my-skills-mindmap-vertical.svg";
@@ -45,7 +45,7 @@ export default function SummaryTile() {
       colour="white"
       style={{
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       <StyledMindMap />

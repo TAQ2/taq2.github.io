@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { GoThreeBars } from "react-icons/go";
 import { animated, useSpring } from "react-spring";
 
@@ -14,8 +14,7 @@ const NavigationBar = styled.div`
   display: flex;
   justify-content: center;
   z-index: 1;
-  padding: 0.2em;
-  padding-left: 2em;
+  padding: 0.5em 0.2em;
 
   @media (max-width: ${screenBreakpoints.tablet}px) {
     justify-content: end;
@@ -31,16 +30,17 @@ const Icon = styled(GoThreeBars)`
 `;
 
 const Button = styled.div`
-  ${({ isLast }) => !isLast && "border-right: 1px solid " + colours.primary};
+  ${({ isLast }) => !isLast && "border-right: 2px solid " + colours.primary};
   padding: 5px 1em;
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
+  font-weight: bold;
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
-  overflow-y: scroll;
+
   @media (max-width: ${screenBreakpoints.tablet}px) {
     display: none;
   }
@@ -51,7 +51,7 @@ export default function Name({ sections }) {
   const navigationRef = useRef(null);
 
   const animation = useSpring({
-    maxHeight: isNavbarExpanded ? "1000px" : "0px" // @Cleanup - 1000 is arbitary, does it need to be calculated?
+    maxHeight: isNavbarExpanded ? "1000px" : "0px", // @Cleanup - 1000 is arbitary, does it need to be calculated?
   });
 
   const handleClickNavItem = (ref, isMobile) => () => {
@@ -61,7 +61,7 @@ export default function Name({ sections }) {
 
     window.scrollTo({
       top: ref.current.offsetTop - navigationRef.current.offsetHeight + 1,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
